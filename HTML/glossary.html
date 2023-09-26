@@ -1,0 +1,447 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!--START-->
+	<html><head>
+	<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Glossary</title></head>
+	<body style="color: rgb(253, 253, 253); background-color: rgb(60, 60, 60);margin-top: 0px; margin-left: 35px; margin-right: 35px;" link="pink" vlink="violet">
+ 	<font face="Source Sans Pro" size="4">	
+<!--TITTLE-->
+	<table style="width: 100%; text-align: left; margin-left: auto; margin-right: auto; color: rgb(183, 253, 53); font-weight:;">
+		<tbody>
+			<tr>
+				<td style="text-align: center; vertical-align: top; background-color: rgb(60, 60, 60);">
+				<font face="Courier" size="4">
+				<big><big><big><big><big>
+				Glossary
+				</big></big></big></big></big>
+				</font>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+<!--LINKS-->
+	<div style="text-align: center;">
+	<small style="font-weight: bold;"><a style="color: rgb(183, 253, 53);"
+	href="#RECORD">Record</a>&nbsp;&nbsp; <a style="color: rgb(183, 253, 53);"
+	href="#TRANSLATION">Translation</a>&nbsp;&nbsp; <a style="color: rgb(183, 253, 53);" href="#DATABASE">Database</a>&nbsp;&nbsp; <a style="color: rgb(183, 253, 53);" href="#AUTOMATION">Automation</a>&nbsp;&nbsp; <a style="color: rgb(183, 253, 53);" href="#OPTIONS">Options</a></small><br>
+	</div><br>
+<!--NOTES-->
+	<span style="color: rgb(255, 153, 0);">
+	<b>TIP: </b></span>
+	<span style="color: yellow;">
+	Use CTRL+F to quickly find the text you are searching for.</span><br>
+	<br>
+
+<!--RECORD-->
+	<table style="font-weight: bold; ; text-align: left; background-color: rgb(183, 253, 53); width: 100%; color: rgb(183, 253, 53);" border="1" cellpadding="2" cellspacing="2">
+		<tbody>
+			<tr>
+				<td style="text-align: center; vertical-align: top; background-color: rgb(35, 35, 35);"><big><a name="RECORD"></a>RECORD<br>
+				</big></td>
+			</tr>
+		</tbody>
+	</table><br>
+
+		<span style="color: white;">
+		<b>Record: </b>
+			<span style="color: rgb(210, 210, 210);">
+			Every element in the game is considered as a <i>record</i>. From a sword to an actor or a climate.</span><br>
+		<span style="color: white;">
+		<b>Name: </b>
+			<span style="color: rgb(210, 210, 210);">
+			The name of the record shown ingame to the player.
+			<span style="color: aquamarine;">
+			Example: Solitude Sawmill.</span><br>
+		<span style="color: white;">
+		<b>FormID: </b>
+			<span style="color: rgb(210, 210, 210);">
+			Is an unique eight digit hexadecimal code that identifies a record. Various records can share the same name but not the same formID.
+			<span style="color: aquamarine;">
+			Example: 000161E9</span>
+		There are two types:<br>
+		<ul>
+			<li><b>BaseID: </b>The FormID of a unique base object in the editor.</li>
+			<li><b>RefID: </b>The FormID of every object in the game. A BaseID object can have several RefID objects.</li>
+		</ul>
+		<span style="color: white;">
+		<b>ID: </b>
+			<span style="color: rgb(210, 210, 210);">
+			The FormIDs managed by this program are always RefIDs, never BaseIDs.</span><br>
+		<span style="color: white;">
+		<b>EDID: </b>
+			<span style="color: rgb(210, 210, 210);">
+			A subrecord used as a more descriptive name of a record, to be easily identified by the developers and in some modding tools. Sometimes they are a number, others mnemonics or a full name. It is used internally by the game engine, and hidden to the player ingame.
+			<span style="color: aquamarine;">
+			Example: SolitudeSawmill.
+			<span style="color: rgb(255, 153, 0);">
+			<b>NOTE: </b>
+				<span style="color: yellow;">
+				In Morrowind, the DIAL and CELL grups are the text to translate. This is why it was so hard to translate a mod back in that time.</span><br>
+		<span style="color: white;">
+		<b>GRUP: </b>
+			<span style="color: rgb(210, 210, 210);">
+			A group of records. Can contains subgroups. It makes the records organized and improves the scanning speed of files.</span><br>
+		<span style="color: white;">
+		<b>Field </b>(Not confuse with a DB <i>Field</i>)<b>:</b></span>
+			<span style="color: rgb(210, 210, 210);">
+			A "slot" for a subrecord. Take a look <a href="options.html#Def_grup.xml">here</a>.</span><br>
+		<span style="color: white;">
+		<b>Index: </b>
+			<span style="color: rgb(210, 210, 210);">
+			Each text in a mod belongs to a <i>record</i>, which belongs to a <i>GRUP</i>. But, for some of this groups, there can be various texts for a same <i>record</i>: same <i>GRUP, ID, EDID</i> and <i>Field</i>. So, in this case, the only way to differentiate them is by the order in which they appears. This order is used by the application to make this <i>Index</i>.</span><br>
+		<span style="color: white;">
+		<b>CRC </b>(Cyclic Redundancy Check)<b>:</b></span>
+			<span style="color: rgb(210, 210, 210);">
+			An error detecting code that identifies every plugin/mod in Bethesda games, and used to check the integrity of the file and detect conflicts between them.
+		</span>
+
+		<br>
+		<br>
+
+<!--TRANSLATION-->
+	<table style="font-weight: bold; text-align: left; background-color: rgb(183, 253, 53); width: 100%; color: rgb(183, 253, 53);" border="1" cellpadding="2" cellspacing="2">
+		<tbody>
+			<tr>
+				<td style="text-align: center; vertical-align: top; background-color: rgb(35, 35, 35);"><big><a name="TRANSLATION"></a>TRANSLATION</big></td>
+			</tr>
+		</tbody>
+	</table><br>
+
+		<span style="color: white;">
+		<b>Main Window: </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			The window shown when the application starts, where the translation tasks are held and from which the user access all the tools.</span><br>
+		<span style="color: white;">
+		<b>Table Grid: </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			The table frame that provides access to all translatable text lines of the mod.<br>
+		<span style="color: white;">
+		<b>Panel: </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			Refers to certain frames inside an application window showing information or offering interaction.</span><br>
+		<span style="color: white;">
+		<b>Menu: </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			Refers to any of the dropdown menus in the <i>Menu bar</i> of the <i>Main Window.</i></span><br>
+		<span style="color: white;">
+		<b>Toolbar: </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			Refers to the icon or information bars of the <i>Main Window</i>.</span><br>
+		<span style="color: white;">
+		<b>Field</b> (Not confuse with a record <i>Field</i>): </span>
+			<span style="color: rgb(210, 210, 210);">
+			Any window or table frame containing data, editable or not, in the program.</span><br>
+		<span style="color: white;">
+		<b>Cell: </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			Each one of the data squares of a table grid.</span><br>
+		<span style="color: white;">
+		<b>Line: </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			Each one of the horizontal group of cells of a table grid.</span><br>
+		<span style="color: white;">
+		<b>Selected Text: </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			This occurs when the text inside a cell is selected by clicking two times on the cell.</span><br>
+		<span style="color: white;">
+		<b>Selected Line/Cell/Field: </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			This occurs when a Line/Cell/Field is selected by clicking one time on them, or just selecting them with the arrow keys.</span><br>
+		<a name="COMMENTS"></a>
+		<span style="color: white;">
+		<b>Comments: </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			This panel appears in various windows of the program. It is fully editable and has different functions depending on what type of cell is selected. <span style="color: aquamarine;">These are some examples:<br>
+			<ul>
+				<li>
+				<b>Normal Text Line: </b>
+				Useful for team or personal notes, to remember or clarify something about the line.  
+				</li>
+				<li>
+				<b>Script Code Line: </b>
+				In <i>Skyrim</i> and <i>Fallout 4</i>, it will show the lines of the script related to the text in the selected field, to help the user to identify visually what and what not to translate. For <i>older games</i>, it will show only the function in which appears the line. <span style="color: rgb(255, 153, 0);">
+				<b>WARNING: </b></span>
+				<span style="color: yellow;">
+				Do not translate directly here. Modify the code wrongly in this field can corrupt the script and produce important problems if used in a game.</span><br>				
+				</li>
+				<li>
+				<b>NPC Name Line: </b>
+				It will show the race and sex of the NPC.				
+				</li>
+				<li>
+				<b>INFO lines: </b>
+				Shows additional data in the dialog lines such as the related quest, the emotion with which it is expressed, the linked Audio filename, etc.				
+				</li>				
+			</ul>
+			</span>
+		<span style="color: white;">
+		<b>Context menu: </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			The menu shown after right click on the table grid in the Main Window.</span><br>
+		<span style="color: white;">
+		<b>Analyze: </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			A task performed by the application to detect the structure of a mod or script, and extract the data needed to translate.</span><br>
+		<span style="color: white;">
+		<b>Compare: </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			A task performed by the application to detect similarities between the data extracted from the mod and the databases.</span><br>
+			The comparison order is the following:</span><br>
+			
+				<div style="margin-left: 40px;">
+				<span style="font-weight: bold; color: rgb(255, 153, 0);">
+				1.</span>
+					<span style="color: rgb(210, 210, 210);">
+					Main DB</span><br>
+				<span style="font-weight: bold; color: rgb(255, 153, 0);">
+				2.</span>
+					<span style="color: rgb(210, 210, 210);">
+					Custom DB</span><br>
+				<span style="font-weight: bold; color: rgb(255, 153, 0);">
+				3.</span>
+					<span style="color: rgb(210, 210, 210);">
+					OnlyText DB</span><br>
+				<span style="font-weight: bold; color: rgb(255, 153, 0);">
+				4.</span>
+					<span style="color: rgb(210, 210, 210);">
+					Dictionary without numbers</span><br>
+				<span style="font-weight: bold; color: rgb(255, 153, 0);">
+				5.</span>
+					<span style="color: rgb(210, 210, 210);">
+					Dictionary without punctuation</span><br>
+				</div>
+
+		<span style="color: white;">
+		<b>Translate:</b>
+			<span style="color: rgb(210, 210, 210);">
+			A task performed automatically by the application or manually by the user, converting the text of a cell or cells from one language to another. When it is done automatically, it occurs after a comparison with one or more databases.<br>
+		<span style="color: white;">
+		<b>Validate: </b>
+			<span style="color: rgb(210, 210, 210);">
+			Saves the changes made in the database persistently, to be valid when required.<br>
+		<span style="color: white;">
+		<b>Loaded Mod: </b>
+			<span style="color: rgb(210, 210, 210);">
+			The mod actually opened to be translated in the application. It is loaded by the <i>Open File (Ctrl+O)</i>.<br>
+		<br>
+
+<!--DATABASE-->
+	<table style="font-weight: bold; text-align: left; background-color: rgb(183, 253, 53); width: 100%; color: rgb(183, 253, 53);" border="1" cellpadding="2" cellspacing="2">
+		<tbody>
+			<tr>
+				<td style="text-align: center; vertical-align: top; background-color: rgb(35, 35, 35);"><big><a name="DATABASE"></a>DATABASE<br>
+				</big></td>
+			</tr>
+		</tbody>
+	</table>
+
+		<br>
+
+		<span style="color: white; font-weight: bold;">
+		DB: </span>
+			<span style="color: rgb(210, 210, 210);">
+			Acronym for database.<br>
+		<span style="color: white; font-weight: bold;">
+		Instant translation: </span>
+			<span style="color: rgb(210, 210, 210);">
+			Allows to apply databases individually or collectively to the current translation.</span><br>
+		<span style="color: white; font-weight: bold;">
+		Mass translation: </span>
+			<span style="color: rgb(210, 210, 210);">
+			A simple tool to extract quickly the data of several mods. Just drag and drop the mods in the window and hit on "Start Translation".</span><br>
+		<span style="color: white; font-weight: bold;">
+		Search Database:</span>
+			<span style="color: rgb(210, 210, 210);">
+			Allows to consult and edit five types of databases.</span><br>
+		<span style="color: white; font-weight: bold;">
+		Main Database: </span>
+			<span style="color: rgb(210, 210, 210);">
+			A database containing all the original texts extracted from a game.</span><br>
+		<span style="color: white; font-weight: bold;">
+		Custom Database: </span>
+			<span style="color: rgb(210, 210, 210);">
+			A database similar to the Main Databases, offered as an alternative for the user to create his own.</span><br>
+		<span style="color: white; font-weight: bold;">
+		TextOnly Database: </span>
+			<span style="color: rgb(210, 210, 210);">
+			A ligth database tool that has less features, but allows to contain more data and manage it faster.</span><br>
+		<span style="color: white; font-weight: bold;">
+		Mod Database: </span>
+			<span style="color: rgb(210, 210, 210);">
+			A temporal database created from the current loaded mod.</span><br>
+		<span style="color: white; font-weight: bold;">
+		External Database: </span>
+			<span style="color: rgb(210, 210, 210);">
+			A temportal database (cannot be saved) that allows to load ANY type of database and create new ones from many types of game files.</span><br>
+		<span style="color: white; font-weight: bold;">
+		Personal EET/XML Database: </span>
+			<span style="color: rgb(210, 210, 210);">
+			The database created from the current mod when the user saves the translation. It is created in the folder <i>Bases Persos</i> inside the installation folder of the game. It can be used to continue the translation later and to translate new versions of the mod.</span><br>
+		<span style="color: white; font-weight: bold;">
+		Load an already translated mod: </span>
+			<span style="color: rgb(210, 210, 210);">
+			Allows to select a translated mod for the application makes relations to translate the matching lines, based on GRUP+ID+EDID+Field+Index. In this case, no verifications are done on the Original Text, because there is not a main database for that text, and the application can not know the changes. This forces the user to revise the translation to correct manually possible mistakes. This is a common situation when translating a newer version of a mod, from an older translated version.</span><br>
+		<span style="color: white; font-weight: bold;">
+		Importation: </span>
+			<span style="color: rgb(210, 210, 210);">
+			A tool used mainly to create/modify modularly databases importing text data from games/mods and to swap the order of the languages in a bilingual database.</span><br>
+		<span style="color: white; font-weight: bold;">
+		Fast Import: </span>
+			<span style="color: rgb(210, 210, 210);">
+			A tool used mainly to quickly create/modify modularly big databases importing text data from games/mods and to swap the order of the languages in a bilingual database.</span><br>
+		<span style="color: white; font-weight: bold;">
+		<a href="translate.html#HUNSPELL">Hunspell</a>: (from Wikipedia) </span>
+			<span style="color: rgb(210, 210, 210);">
+			A <i>spell checker</i> and <i>morphological analyzer</i> designed for languages with rich morphology and complex word compounding and <i>character encoding</i>,</span><br>
+		<span style="color: white; font-weight: bold;">
+		BDD: </span>
+			<span style="color: rgb(210, 210, 210);">
+			Is the acronym for "Base de données" in French, that means "Database" in English. In the installation folder of the program the is as BDD folder containing the <i>Main, Custom, TextOnly and External</i> databases downloaded or created by the user.</span><br>
+		<span style="color: white; font-weight: bold;">
+		%VAR%: </span>
+			<span style="color: rgb(210, 210, 210);">
+			A code tag to help the program to detect a variable text/word in a specific place of several sentences, that exist in the databases available, and translate them automatically. It is used in several of the <i>Automatic Translations</i> tools of the program.</span><br>
+		<span style="color: white; font-weight: bold;">
+		%PARAM%: </span>
+			<span style="color: rgb(210, 210, 210);">
+			A code tag to allow the user to indicate a list of parameters that change in several lines, to help the program to translate them automatically. It is only used in <i>Automatic Translation 1</i>.
+		</span><br>
+		<span style="color: white; font-weight: bold;">
+		<a name="NO_PUNCTUATION"></a>
+		Dictionary without punctuation: </span>
+			Each database have an internal dictionary of text without punctuation, used by several tools of this program to autotranslate the text of the mods skipping punctuation variations. <span style="color: aquamarine;">
+			For example:<br><br>
+				
+				<div style="margin-left: 40px;">
+				This dialog sentence...<br>
+					&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;
+					"<i>Hello! How are you?</i>"<br>
+				is stored in the dictionary as...<br>
+					&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;
+					"<i>hellohowareyou</i>"<br>
+				so, when this another sentence is translated...<br>
+					&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+					"<i>Hello! How are you!!!</i>"<br>
+				uses the same dictionary entry stored, because both phrases share the same text without punctuation.</span><br><br>
+				</div>			
+		<a name="NO_NUMBERS"></a>
+		<span style="color: white; font-weight: bold;">
+		Dictionary without numbers: </span>
+			<span style="color: rgb(210, 210, 210);">
+			Each database have an internal dictionary of text without numbers, used by several tools of this program to autotranslate the text of the mods skipping number variations.
+			<span style="color: aquamarine;">
+			For example: </span><br><br>
+			
+				<div style="margin-left: 40px;">
+				<span style="color: aquamarine;">
+				This dialog sentence...<br>
+					&nbsp;&nbsp;&nbsp;
+					"Give me 6 or 8 eggs!"
+				is stored in the dictionary as...<br>
+					&nbsp;&nbsp;&nbsp;
+					"Give me %var01% or %var02% eggs"
+				so, when this similar sentence appears...<br>
+					&nbsp;&nbsp;&nbsp;
+					"Give me 45 or 80 eggs"
+				it is translated correctly.<br><br>
+	
+				Instead, if you translate the...<br>
+					&nbsp;&nbsp;&nbsp;
+					"Give me 6 eggs!"
+				any sentence matching this pattern...<br>
+					&nbsp;&nbsp;&nbsp;
+					"Give me XX eggs!"<br>
+				will be translated directly at the same time, without being added to any dictionary.
+	
+				In this case, the auto translation, happens just translating a line.</span><br><br>
+				</div>
+
+<!--AUTOMATION-->
+	<table style="font-weight: bold; text-align: left; background-color: rgb(183, 253, 53); width: 100%; color: rgb(183, 253, 53);" border="1" cellpadding="2" cellspacing="2">
+		<tbody>
+			<tr>
+				<td style="text-align: center; vertical-align: top; background-color: rgb(35, 35, 35);"><big><a name="AUTOMATION"></a>AUTOMATION</big></td>
+			</tr>
+		</tbody>
+	</table><br>
+
+		<span style="color: white; font-weight: bold;">
+		Automatic Translation (also Auto Translation): </span>
+			<span style="color: rgb(210, 210, 210);">
+			A tool implemented to solve quickly and easily some special translations patterns that can be found in some mods. The program includes some of these tools.</span><br>
+		<span style="color: white; font-weight: bold;">
+		AT: </span>
+			<span style="color: rgb(210, 210, 210);">
+			Acronym for <i>Automatic Translation</i>.</span><br>
+		<span style="color: white; font-weight: bold;">
+		Clone Auto Translation: </span>
+			<span style="color: rgb(210, 210, 210);">
+			A hidden tool that translates automatically all the lines (in the Main Window), containing exactly the same text as other translated manually.</span><br>
+		<a name="NP_AUTOTRANSLATION"></a>
+		<span style="color: white; font-weight: bold;">
+		Numerical &amp; Punctuation Autotranslation: </span>
+			<span style="color: rgb(210, 210, 210);">
+			A hidden tool that Translates automatically the lines matching exactly the same text without accounting any numerical or punctuation variations, after one of the lines is translated manually. It uses the same technique than the without <a href="glossary.html#NO_NUMBERS">numbers</a> and <a href="glossary.html#NO_PUNCTUATION">punctuation</a> dictionaries, but it this case it only uses the text typing text, not the databases.</span><br>
+		<a name="CARRIAGE_RETURN"></a>
+		<span style="color: white; font-weight: bold;">
+		Carriage Return: </span>
+			<span style="color: rgb(210, 210, 210);">
+			A control (hidden) character used to finish/start a line in a text field or document. It is inserted by pressing the key Enter, but, as said, it is not visible for the user.</span><br>
+		<span style="color: white; font-weight: bold;">
+		Pattern: </span>
+			<span style="color: rgb(210, 210, 210);">
+			A text scheme common in two or more sentences, that can't be translated automatically without the use of the <i>Automatic Translation</i> tools offered by the program.</span><br>
+		<span style="color: white; font-weight: bold;">
+		Rule Pattern: </span>
+			<span style="color: rgb(210, 210, 210);">
+			Any scheme of text/words used in any of the <i>Automatic Translation</i> tools.</span><br>
+		<span style="color: white; font-weight: bold;">
+		Ignored Texts: </span>
+			<span style="color: rgb(210, 210, 210);">
+			A tool used to indicate the program any text to be ignored while translating. <span style="color: aquamarine;">For example, the books in Skyrim include some layout code that should not be translated or modified. So, indicating the code/s in this tool, the program will ignore that text, translating the rest of the text.</span></span><br><br>
+
+<!--OPTIONS-->
+	<table style="font-weight: bold; text-align: left; background-color: rgb(183, 253, 53); width: 100%; color: rgb(183, 253, 53);" border="1" cellpadding="2" cellspacing="2">
+		<tbody>
+			<tr>
+				<td style="text-align: center; vertical-align: top; background-color: rgb(35, 35, 35);"><big><a name="OPTIONS"></a>OPTIONS</big></td>
+			</tr>
+		</tbody>
+	</table><br>
+		<span style="color: white; font-weight: bold;">
+		Character Encoding: </span>
+		A group of characters (mainly grapheme [abc...] and symbols ['&#...]) preset to be used in a determined context, <span style="color: aquamarine;">for example, the common letters and symbols used to represent a language or a group of similar languages, like those that come from <i>Latin</i>. The ones included in this program are listed below:<br></span>
+			<div style="margin-left: 40px;">
+			<span style="color: white; font-weight: bold;">
+			UTF-8: </span>
+				<i><b>U</b>nicode <b>T</b>ransformation <b>F</b>ormat&nbsp;&#8211; <b>8</b>-bit.</i>
+				<span style="color: rgb(210, 210, 210);">
+				An <b>universal</b> character encoding containing all possible characters.</span><br>
+			<span style="color: white; font-weight: bold;">
+			Windows-250: </span>
+				<span style="color: rgb(210, 210, 210);">
+				A character encoding for <b>Central European</b> and <b>Eastern European</b> languages that use Latin script (<i>Polish, Hungarian...</i>).</span><br>
+			<span style="color: white; font-weight: bold;">
+			Windows-251: </span>
+				<span style="color: rgb(210, 210, 210);">
+				A character encoding for <b>Cyrillic</b> script (<i>Russian, Bulgarian...</i>).</span><br>
+			<span style="color: white; font-weight: bold;">
+			Windows-252: </span>
+				<span style="color: rgb(210, 210, 210);">
+				A character encoding of the <b>Latin</b> alphabet (<i>English and some other Western languages</i>).</span><br>
+			<span style="color: white; font-weight: bold;">
+			Shift_jis: </span>
+				<span style="color: rgb(210, 210, 210);">
+				A character encoding for <b>Japanese</b> language. It is used for old games, like <i>Oblivion</i>.</span><br>
+			</div>
+		<span style="color: white; font-weight: bold;">
+		Zlib compressor level: </span>
+			<span style="color: rgb(210, 210, 210);">
+			In a mod, some entries are compressed by Zlib.</span><br>
+
+<!--END-->
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br>
+	</body>
+	</html>

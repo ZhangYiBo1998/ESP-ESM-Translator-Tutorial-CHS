@@ -1,0 +1,728 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!--START-->
+	<html>
+	<head>
+	<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Options</title>
+	</head>
+	<body style="color: rgb(253, 253, 253); background-color: rgb(60, 60, 60);margin-top: 0px; margin-left: 35px; margin-right: 35px;" link="pink" vlink="violet">
+ 	<font face="Source Sans Pro" size="4">
+
+<!--TITTLE-->
+	<a name="OPTIONS"></a>
+	<div style="text-align: center;">
+	<table style="width: 100%; text-align: left; margin-left: auto; margin-right: auto; color: rgb(183, 253, 53); font-weight:">
+		<tbody>
+			<tr>
+				<td style="text-align: center; vertical-align: top; background-color: rgb(60, 60, 60);">
+				<font face="Courier" size="4">
+				<big><big><big><big><big>
+				Options
+				</big></big></big></big></big>
+				</font>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+<!--LINKS-->
+	<small><b><a style="color: rgb(183, 253, 53);"
+	href="#GENERAL_OPTIONS">General Options</a>&nbsp;&nbsp;&nbsp;
+	<a style="color: rgb(183, 253, 53);"
+	href="#DATABASES">Databases</a>&nbsp;&nbsp;&nbsp;
+	<a style="color: rgb(183, 253, 53);"
+	href="#SCRIPTS__MCM">Scripts &amp; MCM</a>&nbsp;&nbsp;&nbsp;
+	<a style="color: rgb(183, 253, 53);"
+	href="#Def_grup.xml">Def_Grup.xml</a>&nbsp;&nbsp;&nbsp;
+	<a style="color: rgb(183, 253, 53);"
+	href="#FOLDERS">Folders</a>&nbsp;&nbsp;&nbsp;
+	<a style="color: rgb(183, 253, 53);"
+	href="#SPECIAL_SEARCHES">Special Searches</a>&nbsp;&nbsp;&nbsp;
+	<a style="color: rgb(183, 253, 53);"
+	href="#MISCELLANEOUS">Miscellaneous</a>&nbsp;&nbsp;&nbsp;
+	<a style="color: rgb(183, 253, 53);"
+	href="#VERIFICATIONS">Verifications</a>&nbsp;&nbsp;&nbsp;
+	<a style="color: rgb(183, 253, 53);"
+	href="#INTERFACE">Interface</a></b></small>
+	</div><br>
+<!--INTRODUCTION-->
+	<span style="color: rgb(210, 210, 210);">
+	This window contains all configurable options of the program arranged by tabs. The default configurations are right for standard translations. Instead, some of these options can/must also be tweaked when the program is executed for the first time (see <a href="install.html">Install</a>), or when a mod is loaded (see <a href="translate.html">Mod Translation</a>).</span><br><br>
+<!--GENERAL OPTIONS-->
+	<table style="font-weight: bold; text-align: left; background-color: rgb(183, 253, 53); width: 100%; color: rgb(183, 253, 53);" border="1" cellpadding="2" cellspacing="2">
+		<tbody>
+			<tr>
+				<td style="text-align: center; vertical-align: top; background-color: rgb(35, 35, 35);"><big><a name="GENERAL_OPTIONS"></a>GENERAL OPTIONS</big></td>
+			</tr>
+		</tbody>
+	</table><br>
+
+	<span style="font-weight: bold; color: white;">
+	Game: </span>
+		<span style="color: rgb(210, 210, 210);">
+		Selects the active game of the mods to translate.</span><br>
+	<span style="font-weight: bold; color: white;">
+	Application Language: </span>
+		<span style="color: rgb(210, 210, 210);">
+		Selects the language of the interface of the program.</span><br>
+	<span style="font-weight: bold; color: rgb(183, 253, 53);"><br>
+	Encoding</span><br>
+		<b>Default input codepage (file to open):</b>
+			<span style="color: rgb(210, 210, 210);">
+			Allows to select the <a href="glossary.html#OPTIONS">character encoding</a> of the file to translate.</span><br>
+		<b>Default output codepage (file translated):</b>
+			<span style="color: rgb(210, 210, 210);">
+			Allows to select the <a href="glossary.html#OPTIONS">character encoding</a> of the file translated.</span><br>			
+		<b>Force input encoding in Fallout 4 and Skyrim SE, which use UTF-8 by default (not advised):</b>
+			<span style="color: rgb(210, 210, 210);">
+			This is a exceptional feature made mainly to force the UTF-8 encoding input when using Skyrim LE version of mods in Skyrim SE. It is only available for English mods, because in other languages there are visual character problems. So, this feature is not to "translate" if not to "adapt" mods.</span><br>
+		<b>Force output encoding in Fallout 4 and Skyrim SE, which use UTF-8 by default (not advised):</b>
+			<span style="color: rgb(210, 210, 210);">
+			This is a exceptional feature made mainly to force the UTF-8 encoding output when using <i>Skyrim LE</i> version of mods in <i>Skyrim SE</i>. It is only available for English mods, because in other languages there are visual character problems. So, this feature is not to "translate" if not to "adapt" mods.</span><br>
+		<b>Ask for input encoding each time a file is opened:</b>
+			<span style="color: rgb(210, 210, 210);">
+			Allows to enable/disable the popup MessageBox asking the user for the input encoding when a mod is loaded.</span><br>
+		<b>Ask for output encoding at each translation:</b>
+			<span style="color: rgb(210, 210, 210);">
+			Allows to enable/disable the popup MessageBox asking the user for the output encoding, when the <a href="menus.html#LTTOTM">Launch the translation of the mod</a> button is pressed.</span><br>
+	<span style="font-weight: bold; color: rgb(183, 253, 53);"><br>
+	Internet Translation</span><br>
+		<span style="color: rgb(210, 210, 210);">
+		Allows to indicate an URL of the <i>Google Translate</i> web for any language to translate a single selected cell. It can be triggered by the <i>Edition Menu</i> or pressing F12.</span><br>
+	<span style="font-weight: bold; color: rgb(183, 253, 53);"><br>
+	Miscellaneous</span><br>
+		<ul>
+			<li><b>Analyze and translate empty fields: </b>
+				<span style="color: rgb(210, 210, 210);">
+				If not checked, the program will hide the lines with the <i>Original Text</i> field empty in the table grid of the <i>Main Window</i>. If checked, the program will show this empty lines, translating them as empty text too.</span></li>
+			<li><b>All identical texts are translated: </b>
+				<span style="color: rgb(210, 210, 210);">
+				Translates automatically the lines that matches the databases automatically.</span></li>
+			<li><b>Automatically validate the line with CTRL+Enter in the edition field of the main window: </b>
+				<span style="color: rgb(210, 210, 210);">
+				If active, allows to validate lines by hotkey.</span></li>
+			<li><b>Do no add the file CRC at the end of the saved file names. </b>
+			<span style="color: rgb(255, 153, 0);"><b>Dangerous! </b></span>
+				<span style="color: yellow;">Risk to make a non wanted replacement of the saved file </span>:
+				<span style="color: rgb(210, 210, 210);">
+				If checked, the name of the saved EET/XML file (after hit on <i>Save Translation (Ctrl+S)</i>, won't include the <a href="glossary.html#RECORD">CRC</a> number of the mod at the end. Not recommended.</span></li>
+			<li><b>Replace without confirmation when copy/paste cells: </b>
+				<span style="color: rgb(210, 210, 210);">
+				Disables the MessageBox pop up for accept/refuse automatically the overwriting of the cell.</span></li>
+		</ul>
+	<span style="font-weight: bold; color: rgb(183, 253, 53);">
+	Log of lines</span><br>
+		<b>Delete historic after saving: </b>
+			<span style="color: rgb(210, 210, 210);">
+			The program stores internally and temporally an history of the modifications made in each line. </span>
+			<span style="color: rgb(210, 210, 210);">
+			Checking this box, the program erase all the content stored when a mod translation is saved. This historic of a line can be shown by selecting the line and pressing on <i>Line log</i> in the <i>Display Menu</i> or by right clicking on the line and then on "<i>See modifications done on this line".</i><br><br>
+	<span style="font-weight: bold; color: rgb(183, 253, 53);">
+	Autosave</span><br>
+		<span style="color: white;">
+		<b>Number of saves at custom bases: </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			Selects the number of autobackups for user databases.</span><br>
+		<span style="color: white;">
+		<b>Automatic saving all XX minute/s (0 = no automatic saving)</b></span>
+			<span style="color: rgb(210, 210, 210);">
+			Allows to indicate the time between automatic saves of the user databases.<br><br>
+	<span style="font-weight: bold; color: rgb(183, 253, 53);">
+	Compression level</span><br>
+		<span style="color: white;">
+		<b>Zlib compressor level: </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			In a mod, some entries are compressed by zlib. To read one, zlib uses automatically the right numbers, but to save, it is needed to precise. Generally, change the compression level has no consequence, except for the size of the final translated file. But maybe some games can't read a too much compressed field. It never happened to the author though, but the option is there.</span><br><br>
+
+<!--DATABASES-->
+	<table style="font-weight: bold; text-align: left; background-color: rgb(183, 253, 53); width: 100%; color: rgb(183, 253, 53);" border="1" cellpadding="2" cellspacing="2">
+		<tbody>
+			<tr>
+				<td style="text-align: center; vertical-align: top; background-color: rgb(35, 35, 35);"><big><a name="DATABASES"></a>DATABASES</big></td>
+			</tr>
+		</tbody>
+	</table><br>
+
+	<span style="color: rgb(183, 253, 53);">
+	<b>Main Database</b></span><br>
+		<span style="color: white;">
+		<b>Database: </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			Allows to select a bilingual <i>Main Database</i> to be used in the translation.</span><br>
+		<span style="color: white;">
+		<b>Always do the comparison after a mod analysis: </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			If checked, after analyze a mod when is loaded, will also be compared with the <i>Main Database</i>, translating the matching lines automatically.</span><br>
+		<span style="color: white;">
+		<b>Replace existing text if it is not validated: </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			Allows to overwrite the matching lines if they are not validated after applying the <i>Main Database</i> in the current translation.</span><br>
+		<span style="color: white;">
+		<b>Validate line if it corresponds EXACTLY to the DB (ID+EDID+Original...): </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			If checked, autovalidates the lines if the text is in the <i>Main Database</i> and matches exactly all the fields..</span><br>
+		<span style="color: white;">
+		<b>Enable search on ID only: </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			If checked, the program will only compare the ID to find the translation, even if all other fields are different. It can be useful sometimes, but can produce false results.</span><br>
+		<span style="color: white;">
+		<b>Enable search on EDID only: </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			If checked, the program will only compare the EDID to find the translation, even if all other fields are different. It can be useful sometimes, but can produce false results.</span><br>
+		<span style="color: white;">
+		<b>Propose the translated text from the DB, even if original is not the same: </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			Sometimes the text in the <i>Original Text</i> field in the mod to translate and in the <i>Main Database</i> are not identical. If this option is checked, the program will translate the line when this situation occurs, but the translated text must supervised and corrected manually by the user.</span><br>
+		<span style="color: white;">
+		<b>Use Custom column as priority: </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			In the <i>Main Database</i> window, opened by <i>Search DB (F3)</i>, there is a <b>Custom</b> column that can be used as an alternate translation, and be used instead the <b>Translated</b> column when the <i>Main Database</i> is applied in the current mod if this option is checked.</span><br>
+		<span style="color: white;">
+		<b>Enable Automatic Translation when doing comparison: </b></span>
+			If checked, all the active lines in all the <i>Automatic Translations</i> tools will be applied when doing a comparison with the <i>Main Database</i>.
+			<span style="color: rgb(255, 153, 0);">
+			<b>NOTE: </b></span>
+			<span style="color: yellow;">
+			This feature is slow, beacuse using <b>AT5</b> on an already translated line slows down the process.
+			</span><br><br>
+	<span style="font-weight: bold; color: rgb(183, 253, 53);">
+	Custom Bases</span><br>
+		<span style="color: white;">
+		<b>Database: </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			Allows to select a <i>Custom Database</i> to be used in the translation.</span><br>
+		<span style="color: white;">
+		<b>Always do the comparison after a mod analysis: </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			If checked, after analyze a mod when is loaded, will also be compared with the <i>Custom Database</i>, if exist, translating the matching lines automatically.</span><br>
+		<span style="color: white;">
+		<b>Replace existing text if it is not validated: </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			Allows to overwrite the matching lines if they are not validated after applying the <i>Custom Database</i> in the current translation.</span><br>
+		<span style="color: white;">
+		<b>Validate line if it corresponds EXACTLY to the DB (ID+EDID+Original...): </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			If checked, autovalidates the lines if the text is in the a <i>Custom Database</i> and matches exactly all the fields..</span><br>
+		<span style="color: white;">
+		<b>Enable search on ID only: </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			If checked, the tools will only compare the ID to find the translation, even if all other fields are different. It can be useful sometimes, but it can produce false results.</span><br>
+		<span style="color: white;">
+		<b>Enable search on EDID only: </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			If checked, the tools will only compare the EDID to find the translation, even if all other fields are different. It can be useful sometimes, but it can produce false results.</span><br>
+		<span style="color: white;">
+		<b>Propose the translated text from the DB, even if original is not the same: </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			Sometimes the text in the <i>Original Text</i> field in the mod to translate and in the <i>Custom Database</i> are not identical. If this option is checked, the program will translate the line when this situation occurs, but the translated text must supervised and corrected manually by the user.</span><br>
+		<span style="color: white;">
+		<b>Use custom column as priority: </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			In the <i>Custom Database</i> window, opened by <i>Search in Custom Database (Shift+F3)</i>, there is a <b>Custom</b> column that can be used as an alternate translation, and be used instead the <b>Translated</b> column when the <i>Custom Database</i> is applied in the current mod if this option is checked.</span><br>
+		<span style="color: white;">
+		<b>Automatically fill this base when saving a translation: </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			Fills the <i>Custom Database</i> with all validated lines when a translation is saved. It is indifferent if <b>Modification enabled</b> is checked or not in the <i>Custom Database</i>. If both cases, the lines will be added.</span><br>
+		<span style="color: white;">
+		<b>Enable Automatic Translation when doing comparison: </b></span>
+			If checked, all the active lines in all the <i>Automatic Translations</i> tools will be applied when doing a comparison with the <i>Custom Database</i>.
+			<span style="color: rgb(255, 153, 0);">
+			<b>NOTE: </b></span>
+			<span style="color: yellow;">
+			This feature is slow, beacuse using <b>AT5</b> on an already translated line slows down the process.
+			</span><br><br>
+	<span style="font-weight: bold; color: rgb(183, 253, 53);">
+	OnlyText Database</span><br>
+		<span style="color: white;">
+		<b>Database: </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			Allows to select a <i>OnlyText Database</i> to be used in the translation.</span><br>
+		<span style="color: white;">
+		<b>Always do the comparison after a mod analysis: </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			If checked, after analyze a mod when is loaded, will also be compared with the <i>OnlyText Database</i>, if exist, translating the matching lines automatically.</span><br>
+		<span style="color: white;">
+		<b>Replace existing text if it is not validated: </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			Allows to overwrite the matching lines if they are not validated after applying the <i>OnlyText Database</i> in the current translation.</span><br>
+		<span style="color: white;">
+		<b>Validate line if original length is higher than ## characters:</b></span>
+			<span style="color: rgb(210, 210, 210);">
+			Allows to automatically validate an autotranslated line, if it has at least the minimum number of characters indicated in the field. This is useful to avoid validating automatically short words or lines that may have several meanings.
+			<span style="color: aquamarine;">
+			For example, the word <i>"chest"</i> can mean <i>"a box with stuff inside"</i> or <i>"torso"</i>. But if the line to autovalidate is longer, the possibility for translation mistakes is lower.</span><br>
+		<span style="color: white;">
+		<b>Automatically fill this base when saving a translation:</b></span>
+			<span style="color: rgb(210, 210, 210);">
+			Fills the <i>OnlyText Database</i> with all validated lines when a translation is saved. It is indifferent if <i>Modification enabled</i> is checked or not in the <i>OnlyText Database</i>. In both cases, the lines will be added.</span><br>
+		<span style="color: white;">
+		<b>Enable Automatic Translation when doing comparison: </b></span>
+			If checked, all the active lines in all the <i>Automatic Translations</i> tools will be applied when doing a comparison with the <i>OnlyText Database</i>.
+			<span style="color: rgb(255, 153, 0);">
+			<b>NOTE: </b></span>
+			<span style="color: yellow;">
+			This feature is slow, beacuse using <b>AT5</b> on an already translated line slows down the process.
+			</span><br><br>
+	<span style="font-weight: bold; color: rgb(183, 253, 53);">
+	Loading to mod</span><br>
+		<span style="color: white;">
+		<b>Always load the corresponding saving translation if it exists: </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			Automatically loads a saved translation while loading an ESP/ESM mod, without asking for confirmation.</span><br>
+		<span style="color: white;">
+		<b>Replace the existing text if it is not validated: </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			Allows to overwrite the matching lines if they are not validated after applying the <i>Loading Mod Database</i> in the current translation.</span><br>
+		<span style="color: white;">
+		<b>Replace the existing text even if its status is equivalent (a validated line will be overwritten by another validated line): </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			If checked, when loading an EET/XML database, the matching lines with the same color will be replaced by the new data. Even validated lines (in green) are replaced in this case. This is useful, for example, when working on a translation with other people in a team way.</span><br>
+		<span style="color: white;">
+		<b>Enable search on ID only: </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			If checked, the tools will only compare the ID to find the translation, even if all other fields are different. It can be useful sometimes, but it can produce false results.</span><br>
+		<span style="color: white;">
+		<b>Enable search on EDID only: </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			If checked, the tools will only compare the EDID to find the translation, even if all other fields are different. It can be useful sometimes, but it can produce false results.</span><br>
+		<span style="color: white;">
+		<b>Enable search without punctuation: </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			Allows the program to use the internal <a href="glossary.html#NO_PUNCTUATION">dictionary without punctuation</a> when any of the <i>search in database tools</i> are triggered. It is active by default.
+			<br>
+		<span style="color: white;">
+		<b>Enable Automatic Translation when doing comparison: </b></span>
+			If checked, all the active lines in all the <i>Automatic Translations</i> tools will be applied when doing a comparison with the <i>Loading Mod Database</i>.
+			<span style="color: rgb(255, 153, 0);">
+			<b>NOTE: </b></span>
+			<span style="color: yellow;">
+			This feature is slow, beacuse using <b>AT5</b> on an already translated line slows down the process.
+			</span><br>
+		<span style="color: white;">
+		<b>Allow the overwrite of lines with a custom status by lines invalidated (orange color): </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			This option is related with the <a href="translate.html#CUSTOM_BUTTON"><i>Custom Status</i></a> button that can be shown/hidden from the <i>Display Menu</i>, and is made mainly for translator teams. The only utility is to allow overwrite the lines marked as <i>custom status</i> by a <i>translator A</i>, with the translation made by a <i>translator B</i> of the team that has edited/updated those lines. Otherwise, the <i>translator A</i> would have to copy and revise them manually to prevent changes from being lost, and with this option checked all is done automatically.
+			</span><br><br>
+		
+	<span style="font-weight: bold; color: rgb(183, 253, 53);">
+	Comparison with an already translated mod</span><br>
+		<span style="color: white;">
+		<b>Replace codeing text if it is not pertinent: </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			If a mod previously translated has data in a line, and that line is not gray, the text won't be replaced while doing the comparison with that translated mod. This avoids to create problems in the text code, allowing to translate just the text that matches with the original text from database.</span><br>
+		<span style="color: white;">
+		<b>Enable search on ID only: </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			If checked, the tools will only compare the ID to find the translation, even if all other fields are different. It can be useful sometimes, but it can produce false results.</span><br>
+		<span style="color: white;">
+		<b>Enable search on EDID only: </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			If checked, the tools will only compare the EDID to find the translation, even if all other fields are different. It can be useful sometimes, but it can produce false results.</span><br>
+	<br>
+
+<!--SCRIPTS & MCM-->
+	<table style="font-weight: bold; text-align: left; background-color: rgb(183, 253, 53); width: 100%; color: rgb(183, 253, 53);" border="1" cellpadding="2" cellspacing="2">
+		<tbody>
+			<tr>
+				<td style="text-align: center; vertical-align: top; background-color: rgb(35, 35, 35);"><big><a name="SCRIPTS__MCM"></a>SCRIPTS &amp; MCM</big></td>
+			</tr>
+		</tbody>
+	</table><br>
+
+	<span style="color: white;">
+	<b>Analysis scripts files: </b></span>
+		<span style="color: rgb(210, 210, 210);">
+		Allows the program to automatically analyze the scripts of the mod.</span><br>
+	<span style="color: white;">
+	<b>Translate scripts files: </b></span>
+		<span style="color: rgb(210, 210, 210);">
+		Allows the program to automatically translate the scripts of the mod.</span><br>
+	<span style="color: white;">
+	<b>Get ALL scripts texts (Dangerous!): </b></span>
+		<span style="color: rgb(210, 210, 210);">
+		Shows the full scripts texts, not only the <i>"translatable"</i> parts. This is dangerous because you can translate parts of the script that are not translatable and make the it unstable in-game.</span><br>
+	<span style="color: white;">
+	<b>Get scripts texts starting by "$": </b></span>
+		<span style="color: rgb(210, 210, 210);">
+		By default, the scripts text beginning by "$" are ignored (it's often an alias for <i>MCM</i> menus). By checking this box, the texts will appear and can be translated. </span><b><span style="color: rgb(255, 153, 0);">Warning: </b></span>
+		<span style="color: yellow;">
+		Don't do it unless you know what you're doing.</span><br>
+	<span style="color: white;">
+	<b>To Analyze and to Translate VMAD.
+		<span style="color: rgb(255, 153, 0);">
+		Warning:</b></span>
+		<span style="color: yellow;">
+		There is only to very rare few thing you have to translate. Better not to play that option.:
+		<span style="color: rgb(210, 210, 210);">
+		VMAD are little scripts linked to specific fields. It's rare to have something to translate in them, but this option exists in case of.</span><br>
+	<span style="color: white;">
+	<b>Display calculated comment instead of raw code:</b>
+		<span style="color: rgb(210, 210, 210);">
+		If checked, the code of scripted lines will be shown in <i>Comments</i> tab in a calculated PEX format for better readability. If not, it is shown the raw code.<br>
+	<span style="color: white;">
+	<b>Analyze all the scripts of the folder "Scripts":</b>
+		<span style="color: rgb(210, 210, 210);">
+		If checked, the program will analyze the scripts of a mod when it is loaded. If not, the scripts will not be included for translation in the <i>Main Window</i>.</span><br>
+	<span style="color: white;">
+	<b>Morrowind: Try to translate scripts using MWSE:</b>
+		<span style="color: rgb(210, 210, 210);">
+		If checked, the program will try to translate the Morrowind scripts that use MWSE code.<br><br>
+	<span style="; color: rgb(183, 253, 53);">
+	<b>MCM Analysis</b></span><br>
+		<span style="color: white;">
+		<b>To analyze the file of the interface MCM: </b>
+			<span style="color: rgb(210, 210, 210);">
+			Allows the program to analyze the interface files in the <i>/data/interface/translations</i> folder of some <i>Bethesda</i> games<<br>
+		<span style="color: white;">
+		<b>Default language of opened MCM files: </b>
+			<span style="color: rgb(210, 210, 210);">
+			Selects the default language to analyze the text in the <i>MCM scripts</i>.
+			<span style="color: rgb(255, 153, 0);">
+			<b>TIP: </b>
+			<span style="color: yellow;">
+			Don't choose the original language here, but the language to translate later.</span><br>
+		<span style="color: white;">
+		<b>Always to open this language, without confirmation: </b>
+			<span style="color: rgb(210, 210, 210);">
+			Just to avoid confirmation when loading <i>MCM scripts</i>.</span><br>
+			<span style="font-weight: bold; color: rgb(183, 253, 53);"><br>
+	MCM Translation</span><br>
+		<span style="color: white;">
+		<b>Translate MCM interface file: </b>
+			<span style="color: rgb(210, 210, 210);">
+			Allows the program to translate the interface files in the <i>/data/interface/translations</i> folder of some <i>Bethesda</i> games.</span><br>
+		<span style="color: white;">
+		<b>Default language of opened MCM files: </b>
+			<span style="color: rgb(210, 210, 210);">
+			Selects the default language to translate the text in the MCM scripts.</span><br>
+			<span style="color: rgb(255, 153, 0);">
+			<b>TIP: </b></span>
+			<span style="color: yellow;">
+			If the language already exists in the mod loaded (it will be offered in a popup MessageBox dropdown list while loading the mod), don´t choose the original language here, but the language to translate later. This is because that is the file which will be replaced. So, better to see if it's not already translated. In case it is not and it exists, the texts will be in English anyway. Those translation files are placed in <i>/Data/Interface/Translations</i> with a <i>.txt</i> extension, and not all the authors use or include them in their mods.</span><br>
+		<span style="color: white;">
+		<b>Always to open this language, without confirmation: </b>
+			<span style="color: rgb(210, 210, 210);">
+			Just to avoid confirmation when loading <i>MCM scripts</i>.</span><br><br>
+	<span style="font-weight: bold; color: rgb(183, 253, 53);">
+	Translation of strings files</span><br>
+		<span style="color: white;">
+		<b>Default language for string files: </b>
+			<span style="color: rgb(210, 210, 210);">
+			Selects the default language to translate the text in the string files. This files are found inside the <i>/data/interface/translations</i> folder of <i>Bethesda</i> games.</span><br><br>
+	<span style="font-weight: bold; color: rgb(183, 253, 53);">
+	Reintegrate files in the BSA</span><br>
+		<span style="color: rgb(210, 210, 210);">
+		The program extracts the scripts from the BSA files to allow to translate them, and this option allows to choose if they will be reinserted in the BSA files after translation or will be left extracted in folder, out of the BSA.</span><br>
+		<span style="color: white;">
+		<b>Always reintegrate: </b>
+			<span style="color: rgb(210, 210, 210);">
+			Selects this option to reinsert the scripts silently.</span><br>
+		<span style="color: white;">
+		<b>Never reintegrate: </b>
+			<span style="color: rgb(210, 210, 210);">
+			Selects this option to left the scripts out silently.</span><br>
+		<span style="color: white;">
+		<b>Ask: </b>
+			<span style="color: rgb(210, 210, 210);">
+			Selects this option to get the possibility to decide if reinsert or not the scripts at the moment of <i>Launch the translation of the mod</i>.</span><br>
+	<span style="font-weight: bold; color: rgb(183, 253, 53);"><br>
+	List of functions which do not need translation</span><br>
+		<span style="color: white;">
+		<b>Modify Skyrim list: </b>
+			<span style="color: rgb(210, 210, 210);">
+			Opens the list of Skyrim code functions that do not need to be translated by the program. To modify it, just add or delete entries. Finally, validate the list to apply the changes.</span><br>
+		<span style="color: white;">
+		<b>Modify Fallout 4 list: </b>
+			<span style="color: rgb(210, 210, 210);">
+			Opens the list of Fallout 4 functions that do not need to be translated by the program. To modify it just add or delete entries and then validate the list to apply the changes.</span><br>
+		<span style="color: white;">
+		<b>Remove Lines which do NOT require translation, instead of validating them automatically:</b>
+			<span style="color: rgb(210, 210, 210);">
+			If checked, the program will hide the lines that do not require translation in the table grid of the <i>Main Window</i>, instead of show and validate them automatically. </span><br><br>
+
+<!--Def_grup.xml-->
+	<table style="font-weight: bold; text-align: left; background-color: rgb(183, 253, 53); width: 100%; color: rgb(183, 253, 53);" border="1" cellpadding="2" cellspacing="2">
+		<tbody>
+			<tr>
+				<td style="text-align: center; vertical-align: top; background-color: rgb(35, 35, 35);"><big><a name="Def_grup.xml"></a>Def_grup.xml</big></td>
+			</tr>
+		</tbody>
+	</table><br>
+
+	<span style="color: rgb(210, 210, 210);">
+	Every element in any Bethesda game is considered as a <a href="glossary.html#RECORD"><b>Record</b></a>, from a sword to an actor or a climate. A <a href="glossary.html#RECORD"><b>GRUP</b></a> field represents a <i>group of records</i>, and can contain <i>subgroups</i>. It makes the <i>records</i> organized and improves the scanning speed of files. The other <a href="glossary.html#RECORD"><b>Fields</b></a> are just some slots that contains <i>subrecords</i> of each group.
+	<br>
+	<span style="color: rgb(210, 210, 210);">
+	This window allows to configure which <b>GRUP</b> and <b>Fields</b> will be analyzed by the program when a mod or database is loaded for each game. To select a game, just use the dropdown list at the top left-hand corner. Then, anything can be changed with no danger. In case of big mistake, deleting the files manually will restore the default configuration after restart the program.</span><br>
+	<br>
+	<span style="color: rgb(210, 210, 210);">
+	The <b>GRUP column</b> contains the list of groups available for the selected game. They can be activated/deactivated by checking the left checkboxes. The <b>Field columns</b> contain the list of fields available for each group, filling them from left to right in a cumulative way. They can also be activated/deactivated by checking the left checkboxes. If <b>Display Max Lengths</b> is checked, a new column will be added at left of each field cell, allowing to indicate the maximum number of characters length of a field. </span>
+	<span style="color: aquamarine;">
+	For example, in Morrowind, the <i>CELL</i> are limited to <i>256 characters</i>. If this value is present, the textbox to type the translation will became red if it is above the <i>256 characters</i>.</span><br><br>
+	<span style="color: rgb(210, 210, 210);">
+	Some <i>GRUP</i> do not contains <i>field analysis</i> (normally only in Skyrim). These are groups which may contain references to scripts. For the program to analyze the scripts, they must have the list of scripts in question. This is an internal list that adds the references to the scripts found after searching for them when analysing the mod. Then, when comes the moment to analyze the scripts, it will do only with the scripts it found. Since few versions, the option exists to analyze all scripts in the scripts folder of the mod. But if a mod analyze in the main data game, the analysis can take time, and the tool will warn you. Concerning the scripts into <i>BSA</i> files, the tools will simply analyze all of them. So just let theses <i>GRUP</i> with no field. They are the GRUPs which can contains scripts reference. The non-listed groups are ignored.
+	<br><br>
+	To add a new GRUP or Field subrecord, just write it into the corresponding cell. After completing the changes in the table, it is necessary to press the <b>Save</b> button to apply them. To discard them just press the <b>Cancel</b> button.<br><br>
+
+<!--FOLDERS-->
+	<table style="font-weight: bold; text-align: left; background-color: rgb(183, 253, 53); width: 100%; color: rgb(183, 253, 53);" border="1" cellpadding="2" cellspacing="2">
+		<tbody>
+			<tr>
+				<td style="text-align: center; vertical-align: top; background-color: rgb(35, 35, 35);"><big><a name="FOLDERS"></a>FOLDERS</big></td>
+			</tr>
+		</tbody>
+	</table><br>
+
+	<span style="color: rgb(210, 210, 210);">
+	This tab allows to indicate the folder path to save a translated mod after hit on <b>Launch the translation of the mod</b> for each supported game of <i>Bethesda</i>, just by clicking on <b>Browse</b> and choosing a folder in your directory tree for the specific game. To activate/deactivate them, simply check/uncheck the checkbox <b>Create the translated mod file in the game data folder</b>, under the <i>Data Patch</i> of the game.</span><br>
+	<br>
+	<span style="color: rgb(255, 153, 0);">
+	<b>ADVICE: </b></span>
+	<span style="color: yellow;">
+	It is not recommendable to use the original Data folder of the games to avoid some problems.</span><br><br>
+
+<!--SPECIAL SEARCHES-->
+	<table style="font-weight: bold; text-align: left; background-color: rgb(183, 253, 53); width: 100%; color: rgb(183, 253, 53);" border="1" cellpadding="2" cellspacing="2">
+		<tbody>
+			<tr>
+				<td style="text-align: center; vertical-align: top; background-color: rgb(35, 35, 35);"><big><a name="SPECIAL_SEARCHES"></a>SPECIAL SEARCHES</big></td>
+			</tr>
+		</tbody>
+	</table><br>
+
+	<span style="color: rgb(183, 253, 53);">
+	<b>Options used when loading a translation save.</b><br>
+	<span style="color: white;">
+	<b>List of punctuation characters: </b>
+		<span style="color: rgb(210, 210, 210);">
+		Allows to specify the list of punctuation characters used by the internal <a href="glossary.html#NO_PUNCTUATION">dictionary without punctuation</a> of the databases.</span><br>
+		<span style="color: rgb(255, 153, 0);">
+		<b>WARNING: </b></span>
+			<span style="color: yellow;">
+			Do NOT add numbers to those fields. Doing that, the <i>numerical auto translation</i> won't works correctly.</span><br>
+		<span style="color: white;">
+		<b>The original text must have a maximal length of *** characters: </b></span><br>
+			<span style="color: rgb(210, 210, 210);">
+			If the original text length is below this value, the corresponding line won't be added to the <a href="glossary.html#NO_PUNCTUATION">dictionary without punctuation</a>.</span><br>
+		<span style="color: white;">
+		<b>Remove the finale punctuation of the translated text too: </b></span>
+		<span style="color: rgb(210, 210, 210);">
+		If checked, the final punctuation signs will be excluded if the line to translate is present in a database, but differs only in the final punctuation. The tool will translate only the text and the final punctuation will remain, so both, the text and the final signs will be translated correctly by the program. <span style="color: aquamarine;">For example, if a database contains the text <i>hello boy!</i> and the mod to translate contains <i>hello boy.</i> (with a dot, not a "!"), it will be translated by <i>Bonjour mon garçon.</i> with the dot at the end. Without it, it would have been translated with the original punctuation (with the "!").</span><br>
+		<span style="color: white;">
+		<b>Automatic Translation Enabled: </b></span>
+			Enables/disables the <a href="glossary.html#NP_AUTOTRANSLATION">Punctuation Autotranslation</a>.<br>
+		<br>
+
+	<span style="font-weight: bold; color: rgb(183, 253, 53);"
+	>Search without numbers</span><br>
+		<span style="color: rgb(210, 210, 210);">
+		Allows the user to tweak some options to indicate the program the way to apply the <a href="glossary.html#NO_NUMBERS">dictionary without numbers</a> tool.</span><br>
+
+		<span style="color: white;">
+		<b>The original text must have a maximal length of *** characters: </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			If the original text length is below this value, the corresponding line won't be added to the <a href="glossary.html#NO_NUMBERS">dictionary without numbers</a>.<br></span>
+		<span style="color: white;">
+		<b>Automatic Translation Enabled: </b>
+			<span style="color: rgb(210, 210, 210);">
+			Enables/disables the <a href="glossary.html#NP_AUTOTRANSLATION">Numerical Autotranslation</a>.
+			<br><br>
+
+<!--MISCELLANEOUS-->
+	<table style="font-weight: bold; text-align: left; background-color: rgb(183, 253, 53); width: 100%; color: rgb(183, 253, 53);" border="1" cellpadding="2" cellspacing="2">
+		<tbody>
+			<tr>
+				<td style="text-align: center; vertical-align: top; background-color: rgb(35, 35, 35);"><big><a name="MISCELLANEOUS"></a>MISCELLANEOUS</big></td>
+			</tr>
+		</tbody>
+	</table><br>
+
+	<a name="TWEAKED_LINES"></a>
+	<span style="font-weight: bold; color: rgb(183, 253, 53);">
+	Show modified lines list when...</span><br>
+		<span style="color: rgb(255, 153, 102);">
+		<b>IMPORTANT: </b></span>
+			<span style="color: yellow;">
+			This tool is dependent on the <i>Automatics</i> options in this same window. There you can activate/deactivate the <i>automatics</i> features individually, and here which of them are showed in the <i>Modifications List</i> panel or window.<br>
+		<span style="color: rgb(255, 153, 102);">
+		<b>IMPORTANT: </b></span>
+			<span style="color: yellow;">
+			There are two ways to visualize modified lines. If <i>Display modified line in the Main Window</i> is checked in the <i>Display Menu</i>, the modifications will be shown in the <i>Modifications List Panel</i> in the lower part of the <i>Main Window</i>. If it is not checked, they will be shown in a emergent pop-up window.<br>  
+		<br>
+		<span style="color: rgb(210, 210, 210);">
+		This window allows to specify which of the six translation tools checkboxed below, will open a <i>Modifications List</i> window, showing the text changes made in all the affected lines after they are translated at once in the <i>Main Window</i>. It is necessary that more than one line be autotranslated simultaneously to trigger this function. Only the checked translation tool options in this <i>Miscellaneous</i> window will be affected.</span><br><br>
+
+		<span style="color: rgb(210, 210, 210);">
+		The utility is mainly informative, but inside the <i>Modifications List</i> window, the edition of the <b>Translated</b> and <b>Previous</b> text cells are allowed individually, being applied in the <i>Main Window</i>, and the option to <b>Back to the previous translation of the selected lines</b> is offered by pressing the button.</span><br>
+		<br>
+		<span style="color: rgb(210, 210, 210);">
+		So that, these are the six checkbox tools:</span><br><br>
+			<div style="margin-left: 40px;">
+			<span style="color: white;">
+			<b>Manual modification: </b></span>
+				<span style="color: rgb(210, 210, 210);">
+				The text introduced manually in the <b>Translated Text</b> cell in the <i>Main Window</i>. Only when there are more than one lines with exactly the same text (numbers are not affected) to the line translated manually, the <i>Modification List</i> window will be open.</span><br>
+			<span style="color: white;">
+			<b>Instant translation: </b></span>
+				<span style="color: rgb(210, 210, 210);">
+				The translations triggered from the Instant Translations in the <i>Edition menu</i>. They apply the texts from any of the five selected types of databases.</span><br>
+			<span style="color: white;">
+			<b>Automatic translation: </b></span>
+				<span style="color: rgb(210, 210, 210);">
+				The translations triggered from the <b>Automatic Translations</b> in the <i>Edition menu</i>. They apply the texts from the special translation patterns made in the <a href="menus.html#Autotranslation_Options">Auto Translation Options</a> window, at the end of the <i>Translation menu</i> or the icon bar.</span><br>
+			<span style="color: white;">
+			<b>Translation sentence by sentence: </b></span>
+				<span style="color: rgb(210, 210, 210);">
+				The translation triggered from <i>Translation Sentence by Sentence</i> in the <i>Edition menu</i>. It translates the line selected using the five selected types of databases (<i>main, custom, textonly, current mod</i> and <i>external</i>). If there are other lines with exactly the same text (numbers are not affected), will also be translated. Only in the latter case, the <i>Modification List</i> window will be open.</span><br>
+			<span style="color: white;">
+			<b>Apply translation to all corresponding originals: </b></span>
+				<span style="color: rgb(210, 210, 210);">
+				The translation triggered from <b>Apply translation to all same Original Texts</b> in the <i>Edition menu</i>.</span><br>
+			<span style="color: white;">
+			<b>Loading a saved mod: </b></span>
+				<span style="color: rgb(210, 210, 210);">
+				The translation triggered from <i>Load Translation</i> and <i>Load an already translated mod</i>in the <i>Translation menu</i>.</span><br>
+			</div>
+		<br>
+	<a name="NIFSKOPE"></a>
+	<span style="font-weight: bold; color: rgb(183, 253, 53);">
+	Translation line by line</span><br>
+		<span style="color: white;">
+		<b>Use Nifskope: </b></span>
+		<span style="color: rgb(210, 210, 210);">
+		If checked, the <i>Nifskope</i> icon on the <i>Icon Toolbar</i> in the <I>Main Window</I>, will be active when a line containing a <i>mesh</i> (e.g. a weapon), to open it directly in Nifskope for visualization or edition, after pressing the icon. If you entered the right path for game data in <i><a href="options.html#FOLDERS">Options/Folders</a></i>, the BSAs from original games will be added as resources in <i>Nifskope</i>, when possible.<br></span>
+		<span style="color: white;">
+		<b>Executable: </b></span>
+		<span style="color: rgb(210, 210, 210);">
+		This option is for the user to indicate the patch of the program (Nifskope) manually by pressing the <span style="color: white;"><b>Button "..."</b></span>. Obviously, it is required, together with the activation of the previous "Use Nifskope" option, to make the <b>"Nifskope - Load Model"</b> util available to use in the <i>Main Window</i>.</span><br>
+	<br>
+	<a name="YANDEX"></a>
+	<span style="font-weight: bold; color: rgb(183, 253, 53);">
+	Yandex API</span><br>
+		<span style="color: rgb(210, 210, 210);">
+		Allows direct online <i>Yandex API</i> translation by selecting word/s, text or line/s and then pressing <b>CTRL+F12</b> or <b>Translation by Yandex API</b> in the bottom of the <i>Edition menu</i>. The text will be translated automatically, but it is limited to <b>10.000.000 characters</b> translated by month, and the accuracy is not perfect, requiring revision and correction by the user, but it is generally useful, speeding up the translation process. To activate it, you need to <a target="_blank" href="https://tech.yandex.com/translate/">get a free key</a> to use the API on the <i>Yandex</i> website.<br>
+		</span>
+		<span style="color: white;">
+		<b>Personal Key: </b></span>
+		<span style="color: rgb(210, 210, 210);">
+		Here you have to introduce a Yandex key. The <a target="_blank" href="https://tech.yandex.com/translate/">Get a free API key (on Yandex website)</a> is just a web link to the key.<br>
+		<span style="color: white;">
+		<b>Input Language: </b></span>
+		<span style="color: rgb(210, 210, 210);">
+		Choose the <i>original language</i> of the text to translate.<br>
+		<span style="color: white;">
+		<b>Output Language: </b></span>
+		<span style="color: rgb(210, 210, 210);">
+		Choose the <i>language to translate</i> the text.<br>
+		<span style="color: white;">
+		<b>Confirm these options: </b></span>
+		<span style="color: rgb(210, 210, 210);">
+		Press on this button to validate the changes introduced above.<br>
+	<br>
+	<a name="GOOGLE"></a>
+	<span style="font-weight: bold; color: rgb(183, 253, 53);">
+	Google Translate API</span><br>
+		<span style="color: rgb(210, 210, 210);">
+		Allows direct online <i>Google Translate API</i> translation by selecting word/s, text or line/s and then pressing <b>SHIFT+F12</b> or <b>Translation via Google Trad</b> in the bottom of the <i>Edition menu</i>. The text will be translated automatically, and the accuracy is not perfect, requiring revision and correction by the user, but it is generally useful, speeding up the translation process.<br>
+		</span>
+		<span style="color: white;">
+		<b>Input Language: </b></span>
+		<span style="color: rgb(210, 210, 210);">
+		Choose the <i>original language</i> of the text to translate.<br>
+		<span style="color: white;">
+		<b>Output Language: </b></span>
+		<span style="color: rgb(210, 210, 210);">
+		Choose the <i>language to translate</i> the text.<br>
+	<br>
+	<a name="AUTOMATICS"></a>
+	<span style="font-weight: bold; color: rgb(183, 253, 53);">
+	Automatics</span><br>
+		<span style="color: rgb(255, 153, 102);">
+		<b>IMPORTANT: </b></span>
+			<span style="color: yellow;">
+			This tool is directly related with the <i>Show modified lines list when...</i> options in this same window. Here you can activate/deactivate the <i>automatics</i> features individually, and there which of them are showed in the <i>Modifications List</i> panel or window.</span><br>
+		<br>
+		
+		Here you can enable/disable individually several of the automatic features that offers the program. All them work in the case that several repeated lines exists and are not translated. If one or more of them, but not all, are modified, after the edition is finished, the program automatically will apply the changes to all the other similar lines. The functionality of all this <i>automatics</i> is based on the <a href="#CLONE"><i>Clone Autotranslation</i></a> system.<br>
+		<br>
+		
+		<span style="color: white;">
+		<b>Enable automatic things (same text, auto translation...) when: </b></span><br>
+			<div style="margin-left: 40px;">
+			<span style="color: white;">
+			<b>Adding prefix or sufix: </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			If checked, any <i>prefix</i> or <i>sufix</i> added from <a href="menus.html#PSFIX"><b>Add a Prefix</b> or <b>Add a Sufix</b></a> in <i>Contextual Menu</i> will be automatically added to any other lines with the same text.</span><br>  
+			<span style="color: white;">
+			<b>Translated Text = Original Text (F8): </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			If checked, when a line is translated by <a href="menus.html#TEQUALO"><b>Translated = Original</b></a> the changes will also be applied automatically to all other lines with the same text.</span><br>
+			<span style="color: white;">
+			<b>Instant translation: </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			If checked, when a line is translated by any of the <a href="menus.html#INSTANT_TRANSLATION"><b>Instant Translation</b></a> database options, the changes will also be applied automatically to all other lines with the same text.</span><br>
+			<span style="color: white;">
+			<b>Text from Main Database/Custom Database: </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			If checked, when a line is translated by <a href="menus.html#FROM_DB"><b>Main Database</b></a> or <a href="menus.html#FROM_CDB"><b>Custom Database</b></a> in <i>Contextual Menu</i>, the changes will also be applied automatically to all other lines with the same text.</span><br>			
+			<span style="color: white;">
+			<b>Automatic translation: </b></span>
+			<span style="color: rgb(210, 210, 210);">
+			If checked, when a line is translated by <a href="menus.html#AUTOMATIC_TRANSLATIONS"><b>Automatic Translations</b></a>, the changes will also be applied automatically to all other lines with the same text.</span><br>			
+			</span><br>
+		</div>
+
+<!--VERIFICATIONS-->
+	<table style="font-weight: bold; text-align: left; background-color: rgb(183, 253, 53); width: 100%; color: rgb(183, 253, 53);" border="1" cellpadding="2" cellspacing="2">
+		<tbody>
+			<tr>
+				<td style="text-align: center; vertical-align: top; background-color: rgb(35, 35, 35);"><big><a name="VERIFICATIONS"></a>VERIFICATIONS</big></td>
+			</tr>
+		</tbody>
+	</table><br>
+
+	Here it is possible to indicate the program a list of forbidden characters by game. If one of these characters is introduced in any text cell of the <i>Main Window</i> while translating, the full <b>Translated</b> field below the <i>Table Grid</i> will be completely colored in <span style="color: black; background-color:red;">red background</span>, and a red text similar to <span style="color: red; background-color:silver;">Forbidden Character: [X]</span> will appear below indicating the concrete mistake.<br><br>
+	To validate the forbidden characters list introduced for each game, the validation <span style="color: green; background-color:silver;"><b>V</b></span>  button at right must be checked. The <span style="color: red; background-color:silver;"><b>X</b></span>  button will erase all the content introduced in the correspondent game field. The checkbox <b>Enable the verification of the presence of forbidden characters</b> must also be checked to activate the verification tool globally.<br>
+	<br>
+<!--INTERFACE-->
+	<table style="font-weight: bold; text-align: left; background-color: rgb(183, 253, 53); width: 100%; color: rgb(183, 253, 53);" border="1" cellpadding="2" cellspacing="2">
+		<tbody>
+			<tr>
+				<td style="text-align: center; vertical-align: top; background-color: rgb(35, 35, 35);"><big><a name="INTERFACE"></a>INTERFACE</big></td>
+			</tr>
+		</tbody>
+	</table><br>
+	
+	<span style="color: rgb(183, 253, 53);">
+	<b>Fonts</b><br></span>
+		<span style="color: rgb(210, 210, 210);">
+		Allows to change the fonts for several parts of the program separately. Just press on the first right button on the right and select the new font. The second button allows to restore it to the default font.</span><br>		
+
+		<span style="color: white;">
+		<b>Textboxes:</b></span>
+			<span style="color: rgb(210, 210, 210);">
+			Allows to change the font for the text in any editable field in the program (Original, Translated, Comments...), except in tables.</span><br>
+		<span style="color: white;">
+		<b>Tables:</b></span>
+			<span style="color: rgb(210, 210, 210);">
+			Allows to change the font for the text in the cells of any table grid in the program.</span><br>
+		<span style="color: white;">
+		<b>Other text:</b></span>
+			<span style="color: rgb(210, 210, 210);">
+			Allows to change the font for the headers of the parts of the program (frames, fields, tabs...).</span><br>
+
+	<br>
+	<span style="font-weight: bold; color: rgb(183, 253, 53);"
+	>Miscellaneous</span><br>
+		<span style="color: rgb(210, 210, 210);">
+		Allows to specify the lines height automatically by checking the <span style="color: white;"><b>Automatic Lines Height</b></span> box, or setup it manually by unchecking it and then specifying the value in the <span style="color: white;"><b>Minimum height of the table lines</b></span> field.</span><br>
+	<br>
+	<span style="color: rgb(183, 253, 53);">
+	<b>Lines Colors</b><br>
+		<span style="color: rgb(210, 210, 210);">
+		Here you can change the background colors of lines in the table, based on the way they are translated. To do it, just click on any of the left <span style="color: white;"><b>color boxes</b></span> and choose a different color from the palette. This can also be done from the <i>Display Menu</i>, by pressing on <a href="menus.html#LINE_COLOR">Change lines colors</a>. The <span style="color: white;"><b>red X button</b></span> to the right restores the dafault colore of the line.</span><br> 		
+	<br>		
+
+<!--END-->
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br>
+	</body>
+	</html>
