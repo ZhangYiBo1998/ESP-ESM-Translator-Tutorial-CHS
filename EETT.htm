@@ -5,15 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Target Frames</title>
 </head>
-<!--FRAME-->
-<frameset cols="200, *" frameborder="no">
-    <frame src="HTML/menu.htm" name="menu_page"/>
-    <frame src="HTML/main.htm" name="main_page"/>
-    <noframes>
-        <body>
-        Your browser does not support frames.
-        </body>
-    </noframes>
-</frameset>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+
+    .flexBox{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex
+    }
+
+    .flexBox .menu{
+        width: auto;
+        height: 99vh;
+        flex-shrink: 0;
+    }
+
+    .flexBox .content{
+        width: 100%;
+        height: 99vh;
+    }
+</style>
+<body>
+    <div class="flexBox">
+        <iframe class="menu" src="HTML/menu.htm" name="menu_page"></iframe>
+        <iframe class="content" style="width: 100%" src="HTML/main.htm" name="main_page"></iframe>
+    </div>
+</body>
 <!--END-->
 </html>
