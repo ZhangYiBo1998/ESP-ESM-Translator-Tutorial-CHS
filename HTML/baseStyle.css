@@ -1,0 +1,93 @@
+:root{
+    --greenColor: rgb(183, 253, 53);
+    --pinkColor: pink;
+    --violetColor: violet;
+}
+body {
+    color: #fff;
+    background-color: rgb(60, 60, 60);
+    margin: 0 35px;
+    padding-top: 20px;
+}
+
+a {
+    color: var(--pinkColor);
+}
+
+a:visited {
+    color: var(--violetColor);
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.pageTitle {
+    color: var(--greenColor);
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.linkTitle a {
+    color: var(--greenColor);
+}
+
+.sectionsTitle {
+    color: var(--greenColor);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: top;
+    background-color: rgb(35, 35, 35);
+    border: 2px solid var(--greenColor);
+    margin: 20px 0;
+}
+
+.greenColor,
+.greenColor span,
+.greenColor p {
+    color: var(--greenColor) !important;
+}
+
+.whiteColor,
+.whiteColor span,
+.whiteColor p {
+    color: white !important;
+}
+
+.grayColor,
+.grayColor span,
+.grayColor p {
+    color: rgb(210, 210, 210) !important;
+}
+
+.aquamarineColor,
+.aquamarineColor span,
+.aquamarineColor p {
+    color: aquamarine !important;
+}
+
+.orangeColor,
+.orangeColor span,
+.orangeColor p {
+    color: orange !important;
+}
+
+.yellowColor,
+.yellowColor span,
+.yellowColor p {
+    color: yellow !important;
+}
+
+.pinkColor,
+.pinkColor span,
+.pinkColor p {
+    color: pink !important;
+}
+
+.violetColor,
+.violetColor span,
+.violetColor p {
+    color: violet !important;
+}

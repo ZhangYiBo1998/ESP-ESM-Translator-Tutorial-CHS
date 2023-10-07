@@ -7,268 +7,220 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="baseStyle.css">
     <title>主页</title>
 </head>
 
-<style>
+<body>
 
-    a{
-        color: pink;
-    }
-    a:visited{
-        color: violet;
-    }
-</style>
-
-<body style="color: rgb(253, 253, 253); background-color: rgb(60, 60, 60);margin-top: 0; margin-left: 35px; margin-right: 35px;">
 <!--TITTLE-->
-<table style="width: 100%; text-align: left; margin-left: auto; margin-right: auto; color: rgb(183, 253, 53); font-weight:bold">
-    <tbody>
-    <tr>
-        <td style="text-align: center; vertical-align: top; background-color: rgb(60, 60, 60);">
-            <span style="color: rgb(183, 253, 53);font-size: 35px">
-                ESP/ESM
-                <br>
-                Translator Tutorial
-                <br>
-                3.10
-            </span>
-        </td>
-    </tr>
-    </tbody>
-</table>
-<!--LINKS-->
-<div style="text-align: center;">
-    <a style="font-weight: bold; color: rgb(183, 253, 53);margin-right: 2em;" href="#INTRODUCTION">引言</a>
-    <a style="font-weight: bold; color: rgb(183, 253, 53);margin-right: 2em;" href="#LEGEND">图例</a>
-    <a style="font-weight: bold; color: rgb(183, 253, 53);margin-right: 2em;" href="#SECTIONS">段落</a>
-    <a style="font-weight: bold; color: rgb(183, 253, 53);margin-right: 2em;" href="#AUTHORS">作者</a>
-    <br>
-    <br>
-    <!--INTRODUCTION-->
-    <table style="font-weight: bold; text-align: left; background-color: rgb(183, 253, 53); width: 100%; color: rgb(183, 253, 53);">
-        <tbody>
-        <tr>
-            <td style="text-align: center; vertical-align: top; background-color: rgb(35, 35, 35);font-size: 20px">
-                <a id="INTRODUCTION"></a>
-                引言
-            </td>
-        </tr>
-        </tbody>
-    </table>
-</div>
-
-<br>
-
-<div style="color: rgb(210, 210, 210);">
-    <!-- ESP/ESM Translator is a program to translate various games and
-    their mods in a quick, easy and precise way. It supports many languages by default, but others can be
-    added by importing as databases the original subtitle files of a game for the two languages involved in
-    translation. It also contains an extensive list of utilities designed to solve comfortably, sometimes
-    automatically, many repetitive translation patterns with text variables, that otherwise would be a hard
-    and long manual work to carry them out. -->
-    ESP/ESM Translator是一个以一种快速、简单和精确的方式翻译各种游戏和他们的mod的程序。
-    默认情况下，它支持多种语言，但其他语言可以通过将涉及的两种语言的游戏的原始字幕文件导入数据库添加翻译。
-    它还包含一个广泛的实用程序列表，旨在轻松地（有时是自动地）解决许多带有文本变量的重复翻译模式，否则这将是一项艰巨而漫长的手动工作。
-    <br>
-    <br>
-    <!-- The tutorial is divided in several sections, explaining each tool of the program in detail. It can be
-    studied as a book or just used as reference consultation to solve specific questions. The first three
-    sections of the tutorial (<b>Features</b>, <b>Install</b> and <b>Translate</b>) can be considered as a
-    <b>Quick Guide</b> for anyone who starts using the program. Specially, the <b>Translate</b> section is
-    very important to learn to manage the program and how it works. The <b>Menus</b> and <b>Options</b>
-    sections can be considered as and <b>Advanced Guide</b>, specially the first, containing detailed
-    information about each feature of the program. Some of them are linked from the <i>Translate</i>
-    section, to allow the user to expand the knowledge in some areas. The <b>Glossary</b> section is there
-    just as pure reference to clarify quickly some common concepts of the program. The content of each of
-    these sections is described below. -->
-    本教程分为几个部分，详细解释了程序中的每个工具。
-    它可以作为一本书来研究，也可以作为解决特定问题的参考咨询。
-    本教程的前三个部分（<b>功能Features</b>、<b>安装Install</b>和<b>翻译Translate</b>）可以被视为<b>快速指南</b>，适用于任何开始使用该程序的人。
-    尤其是<b>翻译Translate</b>部分对于学习管理程序及其工作方式非常重要。
-    <b>菜单Menus</b>和<b>选项Options</b>部分可被视为<b>高级指南</b>，特别是第一部分，包含有关程序每个功能的详细信息。
-    其中<i>翻译Translate</i>部分有一些链接，允许用户扩展某些领域的知识。
-    <b>术语表Glossary</b>部分纯粹是为了快速澄清程序的一些常见概念。
-    以下是这些章节的内容。
-    <br>
-    <br>
-</div>
-
-<!--LEGEND-->
-<table style="font-weight: bold; text-align: left; background-color: rgb(183, 253, 53); width: 100%; color: rgb(183, 253, 53);">
-    <tbody>
-    <tr>
-        <td style="text-align: center; vertical-align: top; background-color: rgb(35, 35, 35);font-size: 20px">
-            <a id="LEGEND"></a>图例
-        </td>
-    </tr>
-    </tbody>
-</table>
-
-<div style="text-align: center;">
-    <span style="color: rgb(210, 210, 210);">
+<div style="text-align: center; font-weight: bold;">
+    <div class="pageTitle">
+        ESP/ESM
         <br>
-        本教程使用各种颜色来突出显示文本的不同部分：
-    </span>
+        Translator Tutorial
+        <br>
+        3.10
+    </div>
     <br>
-    <br>
-    <span style="color: rgb(183, 253, 53);">
-        <!-- The <span style="font-weight: bold;">green</span> is used for the tittles of sections and subsections. -->
-        <span style="font-weight: bold;">绿色</span>是用于小节的标题。
-    </span>
-    <br>
-    <span style="color: white;">
-        <!-- The <span style="font-weight: bold;">white</span> is used to highlight some division parts of subsections. -->
-        <span style="font-weight: bold;">白色</span>是用于突出显示子部分的某些划分部分
-    </span>
-    <br>
-    <span style="color: rgb(210, 210, 210);">
-        <!-- The <span style="font-weight: bold;">gray</span> is used for descriptive text information. -->
-        <span style="font-weight:bold;">灰色</span>用于描述性文本信息。
-    </span>
-    <br>
-    <span style="color: aquamarine;">
-        <!-- The <span style="font-weight: bold;">blue</span> is used for the text of examples. -->
-        <span style="font-weight: bold;">青色</span>是用于示例的文本。
-    </span>
-    <br>
-    <span style="color: rgb(255, 153, 0);">
-        <!-- The <span style="font-weight: bold;">orange</span> is used to highlight the labels of notes and numbered lists. -->
-        <span style="font-weight: bold;">橙色</span>是用于突出显示注释和编号列表的标签。
-    </span>
-    <br>
-    <span style="color: yellow;">
-        <!-- The <span style="font-weight: bold;">yellow</span> is used to highlight important information. -->
-        <span style="font-weight: bold;">黄色</span>是用于突出显示重要信息。
-    </span>
-    <br>
-    <span style="color: pink;">
-        <!-- The <span style="font-weight: bold;">pink</span> is used for the <i><b>non visited</b></i> links. -->
-        <span style="font-weight: bold;">粉色</span>是用于<i><b>未访问</b></i> 的链接。
-    </span>
-    <br>
-    <span style="color: violet;">
-        <!-- The <span style="font-weight: bold;">violet</span> is used for the <i><b>visited</b></i> links. -->
-        <span style="font-weight: bold;">紫色</span>是用于<i><b>已访问</b></i> 的链接。
-    </span>
-    <br>
-    <br>
+    <!--LINKS-->
+    <div class="linkTitle">
+        <a style="margin-right: 2em;" href="#INTRODUCTION">
+            引言
+        </a>
+        <a style="margin-right: 2em;" href="#LEGEND">
+            图例
+        </a>
+        <a style="margin-right: 2em;" href="#SECTIONS">
+            段落
+        </a>
+        <a href="#AUTHORS">
+            作者
+        </a>
+    </div>
 </div>
 
-<!--SECTIONS-->
-<table style="font-weight: bold; text-align: left; background-color: rgb(183, 253, 53); width: 100%; color: rgb(183, 253, 53);">
-    <tbody>
-    <tr>
-        <td style="text-align: center; vertical-align: top; background-color: rgb(35, 35, 35);font-size: 20px">
-            <a id="SECTIONS"></a>段落
-        </td>
-    </tr>
-    </tbody>
-</table>
+<div>
+    <!--INTRODUCTION-->
+    <div class="sectionsTitle">
+        <a id="INTRODUCTION"></a>
+        引言
+    </div>
 
-<div style="text-align: center;">
-    <br>
-    <div>
-        <span style="font-size: 20px;font-weight: bold;">
-            <a style="color: white;" href="features.html">
+    <div class="grayColor">
+        <p>
+            <!-- ESP/ESM Translator is a program to translate various games and
+            their mods in a quick, easy and precise way. It supports many languages by default, but others can be
+            added by importing as databases the original subtitle files of a game for the two languages involved in
+            translation. It also contains an extensive list of utilities designed to solve comfortably, sometimes
+            automatically, many repetitive translation patterns with text variables, that otherwise would be a hard
+            and long manual work to carry them out. -->
+            ESP/ESM Translator是一个以一种快速、简单和精确的方式翻译各种游戏和他们的mod的程序。
+            默认情况下，它支持多种语言，但其他语言可以通过将涉及的两种语言的游戏的原始字幕文件导入数据库添加翻译。
+            它还包含一个广泛的实用程序列表，旨在轻松地（有时是自动地）解决许多带有文本变量的重复翻译模式，否则这将是一项艰巨而漫长的手动工作。
+        </p>
+        <br>
+        <p>
+            <!-- The tutorial is divided in several sections, explaining each tool of the program in detail. It can be
+            studied as a book or just used as reference consultation to solve specific questions. The first three
+            sections of the tutorial (<b>Features</b>, <b>Install</b> and <b>Translate</b>) can be considered as a
+            <b>Quick Guide</b> for anyone who starts using the program. Specially, the <b>Translate</b> section is
+            very important to learn to manage the program and how it works. The <b>Menus</b> and <b>Options</b>
+            sections can be considered as and <b>Advanced Guide</b>, specially the first, containing detailed
+            information about each feature of the program. Some of them are linked from the <i>Translate</i>
+            section, to allow the user to expand the knowledge in some areas. The <b>Glossary</b> section is there
+            just as pure reference to clarify quickly some common concepts of the program. The content of each of
+            these sections is described below. -->
+            本教程分为几个部分，详细解释了程序中的每个工具。
+            它可以作为一本书来研究，也可以作为解决特定问题的参考咨询。
+            本教程的前三个部分（<b>功能Features</b>、<b>安装Install</b>和<b>翻译Translate</b>）可以被视为<b>快速指南</b>，适用于任何开始使用该程序的人。
+            尤其是<b>翻译Translate</b>部分对于学习管理程序及其工作方式非常重要。
+            <b>菜单Menus</b>和<b>选项Options</b>部分可被视为<b>高级指南</b>，特别是第一部分，包含有关程序每个功能的详细信息。
+            其中<i>翻译Translate</i>部分有一些链接，允许用户扩展某些领域的知识。
+            <b>术语表Glossary</b>部分纯粹是为了快速澄清程序的一些常见概念。
+            以下是这些章节的内容。
+        </p>
+        <br>
+    </div>
+</div>
+
+<div>
+    <!--LEGEND-->
+    <div class="sectionsTitle">
+        <a id="LEGEND"></a>
+        图例
+    </div>
+
+    <div style="text-align: center;">
+        <p class="grayColor">
+            本教程使用各种颜色来突出显示文本的不同部分：
+        </p>
+        <br>
+        <p class="greenColor">
+            <!-- The <span style="font-weight: bold;">green</span> is used for the tittles of sections and subsections. -->
+            <span style="font-weight: bold;">绿色</span>是用于小节的标题。
+        </p>
+        <p class="whiteColor">
+            <!-- The <span style="font-weight: bold;">white</span> is used to highlight some division parts of subsections. -->
+            <span style="font-weight: bold;">白色</span>是用于突出显示子部分的某些划线部分
+        </p>
+        <p class="grayColor">
+            <!-- The <span style="font-weight: bold;">gray</span> is used for descriptive text information. -->
+            <span style="font-weight:bold;">灰色</span>用于描述性文本信息。
+        </p>
+        <p class="aquamarineColor">
+            <!-- The <span style="font-weight: bold;">blue</span> is used for the text of examples. -->
+            <span style="font-weight: bold;">青色</span>是用于示例的文本。
+        </p>
+        <p class="orangeColor">
+            <!-- The <span style="font-weight: bold;">orange</span> is used to highlight the labels of notes and numbered lists. -->
+            <span style="font-weight: bold;">橙色</span>是用于突出显示注释和编号列表的标签。
+        </p>
+        <p class="yellowColor">
+            <!-- The <span style="font-weight: bold;">yellow</span> is used to highlight important information. -->
+            <span style="font-weight: bold;">黄色</span>是用于突出显示重要信息。
+        </p>
+        <p class="pinkColor">
+            <!-- The <span style="font-weight: bold;">pink</span> is used for the <i><b>non visited</b></i> links. -->
+            <span style="font-weight: bold;">粉色</span>是用于<i><b>未访问</b></i> 的链接。
+        </p>
+        <p class="violetColor">
+            <!-- The <span style="font-weight: bold;">violet</span> is used for the <i><b>visited</b></i> links. -->
+            <span style="font-weight: bold;">紫色</span>是用于<i><b>已访问</b></i> 的链接。
+        </p>
+    </div>
+</div>
+
+<div>
+    <!--SECTIONS-->
+    <div class="sectionsTitle">
+        <a id="SECTIONS"></a>
+        段落
+    </div>
+
+    <div style="text-align: center;">
+        <div>
+            <a class="whiteColor" style="font-size: 20px; font-weight: bold;" href="features.html">
                 功能Features
             </a>
-        </span>
+            <br>
+            <p class="grayColor">
+                <!-- A list of the tools of the program. -->
+                程序的工具列表。
+            </p>
+        </div>
         <br>
-        <span style="color: rgb(210, 210, 210);">
-            <!-- A list of the tools of the program. -->
-            程序的工具列表。
-        </span>
-    </div>
-    <br>
-    <div>
-        <span style="font-size: 20px;font-weight: bold;">
-            <a style="color: white;" href="install.html">
+        <div>
+            <a class="whiteColor" style="font-size: 20px; font-weight: bold;" href="install.html">
                 安装Install
             </a>
-        </span>
+            <br>
+            <p class="grayColor">
+                <!-- A simple step guide to install the program. -->
+                安装程序的简单步骤指南。
+            </p>
+        </div>
         <br>
-        <span style="color: rgb(210, 210, 210);">
-            <!-- A simple step guide to install the program. -->
-            安装程序的简单步骤指南。
-        </span>
-    </div>
-    <br>
-    <div>
-        <span style="font-size: 20px;font-weight: bold;">
-            <a style="color: white;" href="translate.html">
+        <div>
+            <a class="whiteColor" style="font-size: 20px; font-weight: bold;" href="translate.html">
                 翻译Translate
             </a>
-        </span>
+            <br>
+            <p class="grayColor">
+                <!-- A quick guide with the basic information to use the program. -->
+                使用该程序的基本信息的快速指南。
+            </p>
+        </div>
         <br>
-        <span style="color: rgb(210, 210, 210);">
-            <!-- A quick guide with the basic information to use the program. -->
-            使用该程序的基本信息的快速指南。
-        </span>
-    </div>
-    <br>
-    <div>
-        <span style="font-size: 20px;font-weight: bold;">
-            <a style="color: white;" href="menus.html">
+        <div>
+            <a class="whiteColor" style="font-size: 20px; font-weight: bold;" href="menus.html">
                 菜单Menus
             </a>
-        </span>
+            <br>
+            <p class="grayColor">
+                <!-- An advanced and detailed guide of all the tools of the program. -->
+                该程序所有工具的高级详细指南。
+            </p>
+        </div>
         <br>
-        <span style="color: rgb(210, 210, 210);">
-            <!-- An advanced and detailed guide of all the tools of the program. -->
-            该程序所有工具的高级详细指南。
-        </span>
-    </div>
-    <br>
-    <div>
-        <span style="font-size: 20px;font-weight: bold;">
-            <a style="color: white;" href="options.html">
+        <div>
+            <a class="whiteColor" style="font-size: 20px; font-weight: bold;" href="options.html">
                 选项Options
             </a>
-        </span>
+            <br>
+            <p class="grayColor">
+                <!-- Helps to understand and configure all the options of the program. -->
+                有助于理解和配置程序的所有选项。
+            </p>
+        </div>
         <br>
-        <span style="color: rgb(210, 210, 210);">
-            <!-- Helps to understand and configure all the options of the program. -->
-            有助于理解和配置程序的所有选项。
-        </span>
-    </div>
-    <br>
-    <div>
-        <span style="font-size: 20px;font-weight: bold;">
-            <a style="color: white;" href="glossary.html">
+        <div>
+            <a class="whiteColor" style="font-size: 20px; font-weight: bold;" href="glossary.html">
                 术语表Glossary
             </a>
-        </span>
-        <br>
-        <span style="color: rgb(210, 210, 210);">
-            <!-- A list of the basic concepts used in this guide for quick reference. -->
-            本指南中使用的基本概念列表，以供快速参考。
-        </span>
+            <br>
+            <p class="grayColor">
+                <!-- A list of the basic concepts used in this guide for quick reference. -->
+                本指南中使用的基本概念列表，以供快速参考。
+            </p>
+        </div>
     </div>
-    <br>
 </div>
-<!--AUTHORS-->
-<table style="font-weight: bold; text-align: left; background-color: rgb(183, 253, 53); width: 100%; color: rgb(183, 253, 53);">
-    <tbody>
-    <tr>
-        <td style="text-align: center; vertical-align: top; background-color: rgb(35, 35, 35);font-size: 20px">
-            <a id="AUTHORS"></a>作者
-        </td>
-    </tr>
-    </tbody>
-</table>
-<br>
-<div style="text-align: center;">
-    <span style="font-weight: bold;color: white;">
-        Epervier 666
-        <br>
-        Modling
-    </span>
-    <br>
+
+<div>
+    <!--AUTHORS-->
+    <div class="sectionsTitle">
+        <a id="AUTHORS"></a>
+        作者
+    </div>
+    <div style="text-align: center; font-weight: bold; color: white;">
+        <p>Epervier 666</p>
+        <p>Modling</p>
+    </div>
 </div>
 
 <!--END-->
-<br><br><br><br><br><br><br>
+<br><br><br><br><br><br>
 </body>
 
 </html>
