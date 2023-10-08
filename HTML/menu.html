@@ -12,7 +12,7 @@
 </head>
 
 <style>
-    .pipboyImgBox{
+    .pipboyImgBox {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -22,7 +22,8 @@
         -ms-flex-line-pack: center;
         align-content: center;
     }
-    .pipboyImg{
+
+    .pipboyImg {
         width: 200px;
         height: 151px;
         background-image: url('images/pipboy.png');
@@ -30,12 +31,37 @@
         background-repeat: no-repeat;
         cursor: pointer;
     }
-    .pipboyImg:hover{
+
+    .pipboyImg:hover {
         background-image: url('images/pipboy_hover.png');
     }
-</style>
 
-<body style="background: #292929">
+    .newboxes a {
+        color: #323232;
+        text-decoration: none;
+    }
+
+    .firstLevelMenu {
+        border: 3px solid #B7FD35;
+        background-color: #252525;
+        padding: 5px;
+    }
+
+    .firstLevelMenu a {
+        text-decoration: none;
+    }
+
+    .SecondaryMenu {
+        border: 3px solid #323232;
+        background-color: #B7FD35;
+        display: none;
+        padding: 5px;
+    }
+
+    .active .SecondaryMenu {
+        display: block;
+    }
+</style>
 
 <!--SCRIPT-->
 <script type="text/javascript" charset="utf-8">
@@ -53,8 +79,10 @@
     }
 </script>
 
+<body style="background: #292929">
+
 <!--TITTLE-->
-<div style="text-align: center; vertical-align: top; background-color: rgb(45, 45, 45);">
+<div style="text-align: center; vertical-align: top;">
     <a target="_blank" href="https://www.nexusmods.com/skyrimspecialedition/mods/8828/?">
         <img style="width: 160px; height: 137px;" src="images/tittle_screenboy.png" alt="">
     </a>
@@ -68,386 +96,392 @@
     </a>
 </div>
 <br>
-<br>
 
 <!--INDEX-->
-
 <div>
-    <div style="border: 3px solid #B7FD35; background-color: #252525; padding: 5px;">
-        <a id="myHeader1" href="main.html" target="main_page" onclick="showonlyone('newboxes1');"
-           style="font-weight: bold; color: #B7FD35;">
-            主菜单 Main
-        </a>
-    </div>
-    <div class="newboxes newboxes1"
-         style="border: 3px solid #323232; background-color: #B7FD35; display: block;padding: 5px;">
-        <a href="main.html#INTRODUCTION" target="main_page" style="color: #323232">
-            引言
-        </a>
-    </div>
-    <div class="newboxes newboxes1"
-         style="border: 3px solid #323232; background-color: #B7FD35; display: block;padding: 5px;">
-        <a href="main.html#LEGEND" target="main_page" style="color: #323232">
-            图例
-        </a>
-    </div>
-    <div class="newboxes newboxes1"
-         style="border: 3px solid #323232; background-color: #B7FD35; display: block;padding: 5px;">
-        <a href="main.html#SECTIONS" target="main_page" style="color: #323232">
-            段落
-        </a>
-    </div>
-    <div class="newboxes newboxes1"
-         style="border: 3px solid #323232; background-color: #B7FD35; display: block;padding: 5px;">
-        <a href="main.html#AUTHORS" target="main_page" style="color: #323232">
-            作者
-        </a>
-    </div>
-    <div style="border: 3px solid #B7FD35; background-color: #252525; padding: 5px;">
-        <a id="myHeader2" href="features.html" target="main_page"
-           onclick="showonlyone('newboxes2');" style="font-weight: bold; color: #B7FD35;">
-            功能 Features
-        </a>
-    </div>
-    <div class="newboxes newboxes2"
-         style="border: 3px solid #323232; background-color: #B7FD35; display: none;padding: 5px;">
-        <a href="features.html#GAMES__COMPATIBILITY" target="main_page" style="color: #323232">
-            游戏兼容性
-        </a>
-    </div>
-    <div class="newboxes newboxes2"
-         style="border: 3px solid #323232; background-color: #B7FD35; display: none;padding: 5px;">
-        <a href="features.html#DATABASES__AUTOMATION" target="main_page" style="color: #323232">
-            数据库&自动化
-        </a>
-    </div>
-    <div class="newboxes newboxes2"
-         style="border: 3px solid #323232; background-color: #B7FD35; display: none;padding: 5px;">
-        <a href="features.html#OTHERS" target="main_page" style="color: #323232">
-            其他
-        </a>
-    </div>
-    <div style="border: 3px solid #B7FD35; background-color: #252525; padding: 5px;">
-        <a id="myHeader3" href="install.html" target="main_page"
-           onclick="showonlyone('newboxes3');" style="font-weight: bold; color: #B7FD35;">
-            安装 Install
-        </a>
-    </div>
-    <div class="newboxes newboxes3"
-         style="border: 3px solid #323232; background-color: #B7FD35; display: none;padding: 5px;">
-        <a href="install.html#INTRODUCTION" target="main_page" style="color: #323232">
-            引言
-        </a>
-    </div>
-    <div class="newboxes newboxes3"
-         style="border: 3px solid #323232; background-color: #B7FD35; display: none;padding: 5px;">
-        <a href="install.html#INSTALL" target="main_page" style="color: #323232">
-            安装
-        </a>
-    </div>
-    <div class="newboxes newboxes3"
-         style="border: 3px solid #323232; background-color: #B7FD35; display: none;padding: 5px;">
-        <a href="install.html#UPDATE" target="main_page" style="color: #323232">
-            更新
-        </a>
-    </div>
-    <div style="border: 3px solid #B7FD35; background-color: #252525; padding: 5px;">
-        <a id="myHeader4" href="translate.html" target="main_page"
-           onclick="showonlyone('newboxes4');" style="font-weight: bold; color: #B7FD35;">
-            翻译 Translate
-        </a>
-        <a style="white-space: nowrap">&nbsp;</a>
-        <a href="translate.html#MOD_TRANSLATION" target="main_page"
-           onclick="showonlyone('newboxes4');">
-            <span style="font-weight: bold">
-                <i>Quickly!</i>
-            </span>
-        </a>
-    </div>
-    <div class="newboxes newboxes4"
-         style="border: 3px solid #323232; background-color: #B7FD35; display: none;padding: 5px;">
-        <a href="translate.html#INTRODUCTION" target="main_page" style="color: #323232">
-            引言
-        </a>
-    </div>
-    <div class="newboxes newboxes4"
-         style="border: 3px solid #323232; background-color: #B7FD35; display: none;padding: 5px;">
-        <a href="translate.html#MAIN_WINDOW" target="main_page" style="color: #323232">
-            主窗口
-        </a>
-        <div class="newboxes newboxes4"
-             style="text-align: right; border: 3px solid #323232; background-color: white; display: none;padding: 5px;">
-            <b>
-                <a href="translate.html#PANELS_BARS" target="main_page" style="color: #323232">
-                    <small>面板&条形栏</small></a><br>
-                <a href="translate.html#ICON_TOOLBAR" target="main_page" style="color: #323232">
-                    <small>图标工具栏</small></a><br>
-                <a href="translate.html#TABLE_GRID" target="main_page" style="color: #323232">
-                    <small>表格网格</small></a><br>
-                <a href="translate.html#TRANSLATE_SCRIPTS" target="main_page" style="color: #323232">
-                    <small>翻译脚本</small></a><br>
-            </b>
+    <div>
+        <div class="firstLevelMenu">
+            <a id="myHeader1" class="greenColor" href="main.html" target="main_page" onclick="showonlyone('newboxes1');"
+               style="font-weight: bold;">
+                主菜单 Main
+            </a>
+        </div>
+        <div class="active">
+            <div class="SecondaryMenu newboxes newboxes1">
+                <a href="main.html#INTRODUCTION" target="main_page">
+                    引言
+                </a>
+            </div>
+            <div class="SecondaryMenu newboxes newboxes1">
+                <a href="main.html#LEGEND" target="main_page">
+                    图例
+                </a>
+            </div>
+            <div class="SecondaryMenu newboxes newboxes1">
+                <a href="main.html#SECTIONS" target="main_page">
+                    段落
+                </a>
+            </div>
+            <div class="SecondaryMenu newboxes newboxes1">
+                <a href="main.html#AUTHORS" target="main_page">
+                    作者
+                </a>
+            </div>
         </div>
     </div>
-    <div class="newboxes newboxes4"
-         style="border: 3px solid #323232; background-color: #B7FD35; display: none;padding: 5px;">
-        <a href="translate.html#MOD_TRANSLATION" target="main_page" style="color: #323232">
-            Mod翻译
-        </a>
-    </div>
-    <div class="newboxes newboxes4"
-         style="border: 3px solid #323232; background-color: #B7FD35; display: none;padding: 5px;">
-        <a href="translate.html#DATABASES" target="main_page" style="color: #323232">
-            数据库
-        </a>
-    </div>
-    <div class="newboxes newboxes4"
-         style="border: 3px solid #323232; background-color: #B7FD35; display: none;padding: 5px;">
-        <a href="translate.html#AUTOMATIC_TRANSLATIONS" target="main_page" style="color: #323232">
-            自动翻译
-        </a>
-    </div>
-    <div class="newboxes newboxes4"
-         style="border: 3px solid #323232; background-color: #B7FD35; display: none;padding: 5px;">
-        <a href="translate.html#HOW_IT_WORKS" target="main_page" style="color: #323232">
-            工作原理
-        </a>
-    </div>
-    <div class="newboxes newboxes4"
-         style="border: 3px solid #323232; background-color: #B7FD35; display: none;padding: 5px;">
-        <a href="translate.html#TIPS" target="main_page" style="color: #323232">
-            提示
-        </a>
-    </div>
-    <div style="border: 3px solid #B7FD35; background-color: #252525; padding: 5px;">
-        <a id="myHeader5" href="menus.html" target="main_page"
-           onclick="showonlyone('newboxes5');" style="font-weight: bold; color: #B7FD35;">
-            菜单 Menus
-        </a>
-    </div>
-    <div class="newboxes newboxes5"
-         style="border: 3px solid #323232; background-color: #B7FD35; display: none;padding: 5px;">
-        <a href="menus.html#FILE_MENU" target="main_page" style="color: #323232">
-            文件
-        </a>
-    </div>
-    <div class="newboxes newboxes5"
-         style="border: 3px solid #323232; background-color: #B7FD35; display: none;padding: 5px;">
-        <a href="menus.html#EDITION_MENU" target="main_page" style="color: #323232">
-            编辑
-        </a>
-    </div>
-    <div class="newboxes newboxes5"
-         style="border: 3px solid #323232; background-color: #B7FD35; display: none;padding: 5px;">
-        <a href="menus.html#TRANSLATION_MENU" target="main_page" style="color: #323232">
-            翻译
-        </a>
-        <br>
-        <div class="newboxes newboxes5"
-             style="text-align: right; border: 3px solid #323232; background-color: white; display: none;padding: 5px;">
-            <b>
-                <a href="menus.html#Autotranslation_Options" target="main_page" style="color: #323232">
-                    <small>自动翻译</small></a><br>
-                <a href="menus.html#Auto_Translations_1" target="main_page" style="color: #323232">
-                    <small>1</small></a>
-                <a href="menus.html#Auto_Translations_2" target="main_page" style="color: #323232">
-                    <small>2</small></a>
-                <a href="menus.html#Auto_Translations_3" target="main_page" style="color: #323232">
-                    <small>3</small></a>
-                <a href="menus.html#Auto_Translations_4" target="main_page" style="color: #323232">
-                    <small>4</small></a>
-                <a href="menus.html#Auto_Translations_5" target="main_page" style="color: #323232">
-                    <small>5</small></a>
-                <a href="menus.html#Auto_Translations_GRUP" target="main_page" style="color: #323232">
-                    <small>G</small></a>
-                <a href="menus.html#Manual_Auto_Translation" target="main_page" style="color: #323232">
-                    <small>M</small></a>
-            </b>
+    <div>
+        <div class="firstLevelMenu">
+            <a id="myHeader2" class="greenColor" href="features.html" target="main_page"
+               onclick="showonlyone('newboxes2');" style="font-weight: bold;">
+                功能 Features
+            </a>
+        </div>
+        <div>
+            <div class="SecondaryMenu newboxes newboxes2">
+                <a href="features.html#GAMES__COMPATIBILITY" target="main_page">
+                    游戏兼容性
+                </a>
+            </div>
+            <div class="SecondaryMenu newboxes newboxes2">
+                <a href="features.html#DATABASES__AUTOMATION" target="main_page">
+                    数据库&自动化
+                </a>
+            </div>
+            <div class="SecondaryMenu newboxes newboxes2">
+                <a href="features.html#OTHERS" target="main_page">
+                    其他
+                </a>
+            </div>
         </div>
     </div>
-    <div class="newboxes newboxes5"
-         style="border: 3px solid #323232; background-color: #B7FD35; display: none;padding: 5px;">
-        <a href="menus.html#DATABASES_MENU" target="main_page" style="color: #323232">
-            数据库
-        </a>
-        <div class="newboxes newboxes5"
-             style="text-align: right; border: 3px solid #323232; background-color: white; display: none;padding: 5px;">
-            <b>
-                <a href="menus.html#SEARCH_DB" target="main_page" style="color: #323232">
-                    <small>mainDB</small></a><br>
-                <a href="menus.html#SEARCH_CB" target="main_page" style="color: #323232">
-                    <small>customDB</small></a><br>
-                <a href="menus.html#SEARCH_TB" target="main_page" style="color: #323232">
-                    <small>onlytextDB</small></a><br>
-                <a href="menus.html#SEARCH_MB" target="main_page" style="color: #323232">
-                    <small>modDB</small></a><br>
-                <a href="menus.html#SEARCH_EB" target="main_page" style="color: #323232">
-                    <small>externalDB</small></a><br>
-                ---<br>
-                <a href="menus.html#FAST_IMPORT" target="main_page" style="color: #323232">
-                    <small>Fast Import</small></a><br>
-            </b>
+    <div>
+        <div class="firstLevelMenu">
+            <a id="myHeader3" class="greenColor" href="install.html" target="main_page"
+               onclick="showonlyone('newboxes3');" style="font-weight: bold;">
+                安装 Install
+            </a>
+        </div>
+        <div>
+            <div class="SecondaryMenu newboxes newboxes3">
+                <a href="install.html#INTRODUCTION" target="main_page">
+                    引言
+                </a>
+            </div>
+            <div class="SecondaryMenu newboxes newboxes3">
+                <a href="install.html#INSTALL" target="main_page">
+                    安装
+                </a>
+            </div>
+            <div class="SecondaryMenu newboxes newboxes3">
+                <a href="install.html#UPDATE" target="main_page">
+                    更新
+                </a>
+            </div>
         </div>
     </div>
-    <div class="newboxes newboxes5"
-         style="border: 3px solid #323232; background-color: #B7FD35; display: none;padding: 5px;">
-        <a href="menus.html#DISPLAY" target="main_page" style="color: #323232">
-            显示
-        </a>
+    <div>
+        <div class="firstLevelMenu" style="font-weight: bold">
+            <a id="myHeader4" class="greenColor" href="translate.html" target="main_page"
+               onclick="showonlyone('newboxes4');" style="margin-right: 1em;">
+                翻译 Translate
+            </a>
+            <a style="font-style: italic;" href="translate.html#MOD_TRANSLATION" target="main_page"
+               onclick="showonlyone('newboxes4');">
+                Quickly!
+            </a>
+        </div>
+        <div>
+            <div class="SecondaryMenu newboxes newboxes4">
+                <a href="translate.html#INTRODUCTION" target="main_page">
+                    引言
+                </a>
+            </div>
+            <div class="SecondaryMenu newboxes newboxes4">
+                <a href="translate.html#MAIN_WINDOW" target="main_page">
+                    主窗口
+                </a>
+                <div class="newboxes newboxes4"
+                     style="text-align: right; border: 3px solid #323232; background-color: white; padding: 5px;">
+                    <b>
+                        <a href="translate.html#PANELS_BARS" target="main_page">
+                            <small>面板&条形栏</small>
+                        </a>
+                        <br>
+                        <a href="translate.html#ICON_TOOLBAR" target="main_page">
+                            <small>图标工具栏</small>
+                        </a>
+                        <br>
+                        <a href="translate.html#TABLE_GRID" target="main_page">
+                            <small>表格网格</small>
+                        </a>
+                        <br>
+                        <a href="translate.html#TRANSLATE_SCRIPTS" target="main_page">
+                            <small>翻译脚本</small>
+                        </a>
+                        <br>
+                    </b>
+                </div>
+            </div>
+            <div class="SecondaryMenu newboxes newboxes4">
+                <a href="translate.html#MOD_TRANSLATION" target="main_page">
+                    Mod翻译
+                </a>
+            </div>
+            <div class="SecondaryMenu newboxes newboxes4">
+                <a href="translate.html#DATABASES" target="main_page">
+                    数据库
+                </a>
+            </div>
+            <div class="SecondaryMenu newboxes newboxes4">
+                <a href="translate.html#AUTOMATIC_TRANSLATIONS" target="main_page">
+                    自动翻译
+                </a>
+            </div>
+            <div class="SecondaryMenu newboxes newboxes4">
+                <a href="translate.html#HOW_IT_WORKS" target="main_page">
+                    工作原理
+                </a>
+            </div>
+            <div class="SecondaryMenu newboxes newboxes4">
+                <a href="translate.html#TIPS" target="main_page">
+                    提示
+                </a>
+            </div>
+        </div>
     </div>
-    <div class="newboxes newboxes5"
-         style="border: 3px solid #323232; background-color: #B7FD35; display: none;padding: 5px;">
-        <a href="menus.html#FILTERS" target="main_page" style="color: #323232">
-            过滤器
-        </a>
+    <div>
+        <div class="firstLevelMenu">
+            <a id="myHeader5" class="greenColor" href="menus.html" target="main_page"
+               onclick="showonlyone('newboxes5');" style="font-weight: bold;">
+                菜单 Menus
+            </a>
+        </div>
+        <div>
+            <div class="SecondaryMenu newboxes newboxes5">
+                <a href="menus.html#FILE_MENU" target="main_page">
+                    文件
+                </a>
+            </div>
+            <div class="SecondaryMenu newboxes newboxes5">
+                <a href="menus.html#EDITION_MENU" target="main_page">
+                    编辑
+                </a>
+            </div>
+            <div class="SecondaryMenu newboxes newboxes5">
+                <a href="menus.html#TRANSLATION_MENU" target="main_page">
+                    翻译
+                </a>
+                <br>
+                <div class="newboxes newboxes5"
+                     style="text-align: right; border: 3px solid #323232; background-color: white;padding: 5px;">
+                    <b>
+                        <a href="menus.html#Autotranslation_Options" target="main_page">
+                            <small>自动翻译</small>
+                        </a>
+                        <br>
+                        <a href="menus.html#Auto_Translations_1" target="main_page">
+                            <small>1</small>
+                        </a>
+                        <a href="menus.html#Auto_Translations_2" target="main_page">
+                            <small>2</small>
+                        </a>
+                        <a href="menus.html#Auto_Translations_3" target="main_page">
+                            <small>3</small>
+                        </a>
+                        <a href="menus.html#Auto_Translations_4" target="main_page">
+                            <small>4</small>
+                        </a>
+                        <a href="menus.html#Auto_Translations_5" target="main_page">
+                            <small>5</small>
+                        </a>
+                        <a href="menus.html#Auto_Translations_GRUP" target="main_page">
+                            <small>G</small>
+                        </a>
+                        <a href="menus.html#Manual_Auto_Translation" target="main_page">
+                            <small>M</small>
+                        </a>
+                    </b>
+                </div>
+            </div>
+            <div class="SecondaryMenu newboxes newboxes5">
+                <a href="menus.html#DATABASES_MENU" target="main_page">
+                    数据库
+                </a>
+                <div class="newboxes newboxes5"
+                     style="text-align: right; border: 3px solid #323232; background-color: white; padding: 5px;">
+                    <b>
+                        <a href="menus.html#SEARCH_DB" target="main_page">
+                            <small>mainDB</small>
+                        </a>
+                        <br>
+                        <a href="menus.html#SEARCH_CB" target="main_page">
+                            <small>customDB</small>
+                        </a>
+                        <br>
+                        <a href="menus.html#SEARCH_TB" target="main_page">
+                            <small>onlytextDB</small>
+                        </a>
+                        <br>
+                        <a href="menus.html#SEARCH_MB" target="main_page">
+                            <small>modDB</small>
+                        </a>
+                        <br>
+                        <a href="menus.html#SEARCH_EB" target="main_page">
+                            <small>externalDB</small>
+                        </a>
+                        <br>
+                        <span style="color: #323232">---</span>
+                        <br>
+                        <a href="menus.html#FAST_IMPORT" target="main_page">
+                            <small>Fast Import</small>
+                        </a>
+                        <br>
+                    </b>
+                </div>
+            </div>
+            <div class="SecondaryMenu newboxes newboxes5">
+                <a href="menus.html#DISPLAY" target="main_page">
+                    显示
+                </a>
+            </div>
+            <div class="SecondaryMenu newboxes newboxes5">
+                <a href="menus.html#FILTERS" target="main_page">
+                    过滤器
+                </a>
+            </div>
+            <div class="SecondaryMenu newboxes newboxes5">
+                <a href="menus.html#ORTHOGRAPHY" target="main_page">
+                    拼写检查
+                </a>
+            </div>
+            <div class="SecondaryMenu newboxes newboxes5">
+                <a href="menus.html#TOOLS" target="main_page">
+                    工具
+                </a>
+            </div>
+            <div class="SecondaryMenu newboxes newboxes5">
+                <a href="menus.html#HELP" target="main_page">
+                    帮助
+                </a>
+            </div>
+            <div class="SecondaryMenu newboxes newboxes5">
+                <a href="menus.html#CONTEXT_MENU" target="main_page">
+                    右键菜单
+                </a>
+            </div>
+
+        </div>
+
     </div>
-    <div class="newboxes newboxes5"
-         style="border: 3px solid #323232; background-color: #B7FD35; display: none;padding: 5px;">
-        <a href="menus.html#ORTHOGRAPHY" target="main_page" style="color: #323232">
-            拼写检查
-        </a>
+    <div>
+        <div class="firstLevelMenu">
+            <a id="myHeader6" class="greenColor" href="options.html" target="main_page"
+               onclick="showonlyone('newboxes6');" style="font-weight: bold;">
+                选项 Options
+            </a>
+        </div>
+        <div class="SecondaryMenu newboxes newboxes6">
+            <a href="options.html#GENERAL_OPTIONS" target="main_page">
+                常规选项
+            </a>
+        </div>
+        <div class="SecondaryMenu newboxes newboxes6">
+            <a href="options.html#DATABASES" target="main_page">
+                数据库
+            </a>
+        </div>
+        <div class="SecondaryMenu newboxes newboxes6">
+            <a href="options.html#SCRIPTS__MCM" target="main_page">
+                脚本&MCM
+            </a>
+        </div>
+        <div class="SecondaryMenu newboxes newboxes6">
+            <a href="options.html#Def_grup.xml" target="main_page">
+                Def_Grup.xml
+            </a>
+        </div>
+        <div class="SecondaryMenu newboxes newboxes6">
+            <a href="options.html#FOLDERS" target="main_page">
+                文件夹
+            </a>
+        </div>
+        <div class="SecondaryMenu newboxes newboxes6">
+            <a href="options.html#SPECIAL_SEARCHES" target="main_page">
+                特殊搜索
+            </a>
+        </div>
+        <div class="SecondaryMenu newboxes newboxes6">
+            <a href="options.html#MISCELLANEOUS" target="main_page">
+                杂项
+            </a>
+        </div>
+        <div class="SecondaryMenu newboxes newboxes6">
+            <a href="options.html#VERIFICATIONS" target="main_page">
+                验证
+            </a>
+        </div>
+        <div class="SecondaryMenu newboxes newboxes6">
+            <a href="options.html#INTERFACE" target="main_page">
+                接口
+            </a>
+        </div>
     </div>
-    <div class="newboxes newboxes5"
-         style="border: 3px solid #323232; background-color: #B7FD35; display: none;padding: 5px;">
-        <a href="menus.html#TOOLS" target="main_page" style="color: #323232">
-            工具
-        </a>
-    </div>
-    <div class="newboxes newboxes5"
-         style="border: 3px solid #323232; background-color: #B7FD35; display: none;padding: 5px;">
-        <a href="menus.html#HELP" target="main_page" style="color: #323232">
-            帮助
-        </a>
-    </div>
-    <div class="newboxes newboxes5"
-         style="border: 3px solid #323232; background-color: #B7FD35; display: none;padding: 5px;">
-        <a href="menus.html#CONTEXT_MENU" target="main_page" style="color: #323232">
-            右键菜单
-        </a>
-    </div>
-    <div style="border: 3px solid #B7FD35; background-color: #252525; padding: 5px;">
-        <a id="myHeader6" href="options.html" target="main_page"
-           onclick="showonlyone('newboxes6');" style="font-weight: bold; color: #B7FD35;">
-            选项 Options
-        </a>
-    </div>
-    <div class="newboxes newboxes6"
-         style="border: 3px solid #323232; background-color: #B7FD35; display: none;padding: 5px;">
-        <a href="options.html#GENERAL_OPTIONS" target="main_page" style="color: #323232">
-            常规选项
-        </a>
-    </div>
-    <div class="newboxes newboxes6"
-         style="border: 3px solid #323232; background-color: #B7FD35; display: none;padding: 5px;">
-        <a href="options.html#DATABASES" target="main_page" style="color: #323232">
-            数据库
-        </a>
-    </div>
-    <div class="newboxes newboxes6"
-         style="border: 3px solid #323232; background-color: #B7FD35; display: none;padding: 5px;">
-        <a href="options.html#SCRIPTS__MCM" target="main_page" style="color: #323232">
-            脚本&MCM
-        </a>
-    </div>
-    <div class="newboxes newboxes6"
-         style="border: 3px solid #323232; background-color: #B7FD35; display: none;padding: 5px;">
-        <a href="options.html#Def_grup.xml" target="main_page" style="color: #323232">
-            Def_Grup.xml</a>
-    </div>
-    <div class="newboxes newboxes6"
-         style="border: 3px solid #323232; background-color: #B7FD35; display: none;padding: 5px;">
-        <a href="options.html#FOLDERS" target="main_page" style="color: #323232">
-            文件夹
-        </a>
-    </div>
-    <div class="newboxes newboxes6"
-         style="border: 3px solid #323232; background-color: #B7FD35; display: none;padding: 5px;">
-        <a href="options.html#SPECIAL_SEARCHES" target="main_page" style="color: #323232">
-            特殊搜索
-        </a>
-    </div>
-    <div class="newboxes newboxes6"
-         style="border: 3px solid #323232; background-color: #B7FD35; display: none;padding: 5px;">
-        <a href="options.html#MISCELLANEOUS" target="main_page" style="color: #323232">
-            杂项
-        </a>
-    </div>
-    <div class="newboxes newboxes6"
-         style="border: 3px solid #323232; background-color: #B7FD35; display: none;padding: 5px;">
-        <a href="options.html#VERIFICATIONS" target="main_page" style="color: #323232">
-            验证
-        </a>
-    </div>
-    <div class="newboxes newboxes6"
-         style="border: 3px solid #323232; background-color: #B7FD35; display: none;padding: 5px;">
-        <a href="options.html#INTERFACE" target="main_page" style="color: #323232">
-            接口
-        </a>
-    </div>
-    <div style="border: 3px solid #B7FD35; background-color: #252525; padding: 5px;">
-        <a id="myHeader7" href="glossary.html" target="main_page"
-           onclick="showonlyone('newboxes7');" style="font-weight: bold; color: #B7FD35;">
-            术语表 Glossary
-        </a>
-    </div>
-    <div class="newboxes newboxes7"
-         style="border: 3px solid #323232; background-color: #B7FD35; display: none;padding: 5px;">
-        <a href="glossary.html#RECORD" target="main_page" style="color: #323232">
-            Record
-        </a>
-    </div>
-    <div class="newboxes newboxes7"
-         style="border: 3px solid #323232; background-color: #B7FD35; display: none;padding: 5px;">
-        <a href="glossary.html#TRANSLATION" target="main_page" style="color: #323232">
-            Translation
-        </a>
-    </div>
-    <div class="newboxes newboxes7"
-         style="border: 3px solid #323232; background-color: #B7FD35; display: none;padding: 5px;">
-        <a href="glossary.html#DATABASE" target="main_page" style="color: #323232">
-            Database
-        </a>
-    </div>
-    <div class="newboxes newboxes7"
-         style="border: 3px solid #323232; background-color: #B7FD35; display: none;padding: 5px;">
-        <a href="glossary.html#AUTOMATION" target="main_page" style="color: #323232">
-            Automation
-        </a>
-    </div>
-    <div class="newboxes newboxes7"
-         style="border: 3px solid #323232; background-color: #B7FD35; display: none;padding: 5px;">
-        <a href="glossary.html#OPTIONS" target="main_page" style="color: #323232">
-            Options
-        </a>
+    <div>
+        <div class="firstLevelMenu">
+            <a id="myHeader7" class="greenColor" href="glossary.html" target="main_page"
+               onclick="showonlyone('newboxes7');" style="font-weight: bold;">
+                术语表 Glossary
+            </a>
+        </div>
+        <div>
+            <div class="SecondaryMenu newboxes newboxes7">
+                <a href="glossary.html#RECORD" target="main_page">
+                    Record
+                </a>
+            </div>
+            <div class="SecondaryMenu newboxes newboxes7">
+                <a href="glossary.html#TRANSLATION" target="main_page">
+                    Translation
+                </a>
+            </div>
+            <div class="SecondaryMenu newboxes newboxes7">
+                <a href="glossary.html#DATABASE" target="main_page">
+                    Database
+                </a>
+            </div>
+            <div class="SecondaryMenu newboxes newboxes7">
+                <a href="glossary.html#AUTOMATION" target="main_page">
+                    Automation
+                </a>
+            </div>
+            <div class="SecondaryMenu newboxes newboxes7">
+                <a href="glossary.html#OPTIONS" target="main_page">
+                    Options
+                </a>
+            </div>
+        </div>
     </div>
 </div>
-
 <br>
-<br>
-
 <!--PIPBOY-->
 <div class="pipboyImgBox">
     <div class="pipboyImg"></div>
 </div>
 <br>
-
 <!--NOTE-->
 <div style="color: rgb(255, 153, 0);text-align: center">
-    <br>
-    <span>
-        <b>IMPORTANT</b>
-    </span>
-    <br>
-    <span style="color: yellow">
-        <b>XML</b> dbs are now <b>EET</b><br> <b>- Both work -</b><br>
+    <p style="font-weight: bold">
+        IMPORTANT
+    </p>
+    <p style="color: yellow">
+        <b>XML</b> dbs are now <b>EET</b><br> <b>- Both work -</b>
+        <br>
         <a target="main_page" href="menus.html#XML2EET">
             <i>Convert Now!</i>
         </a>
-    </span>
-    <br>
+    </p>
 </div>
 
-<br>
 <br>
 <br>
 
