@@ -37,6 +37,8 @@
     }
 
     .newboxes a {
+        display: inline-block;
+        width: 100%;
         color: #323232;
         text-decoration: none;
     }
@@ -48,6 +50,8 @@
     }
 
     .firstLevelMenu a {
+        display: inline-block;
+        width: 100%;
         text-decoration: none;
     }
 
@@ -64,6 +68,18 @@
         background-color: #B7FD35;
         display: block;
         padding: 5px;
+    }
+
+    .secondaryBox {
+        text-align: right;
+        border: 3px solid #323232;
+        background-color: white;
+        padding: 5px;
+        font-weight: bold;
+    }
+
+    .secondaryBox > div {
+        border-bottom: 2px solid #323232;
     }
 </style>
 
@@ -185,11 +201,11 @@
     </div>
     <div>
         <div class="firstLevelMenu" style="font-weight: bold">
-            <a id="myHeader4" class="greenColor" href="translate.html" target="main_page"
-               onclick="showonlyone('newboxes4');" style="margin-right: 1em;">
+            <a id="myHeader4" class="greenColor" style="width: auto; margin-right: 1em;"
+               href="translate.html" target="main_page" onclick="showonlyone('newboxes4');">
                 翻译 Translate
             </a>
-            <a style="font-style: italic;" href="translate.html#MOD_TRANSLATION" target="main_page"
+            <a style="width: auto; font-style: italic;" href="translate.html#MOD_TRANSLATION" target="main_page"
                onclick="showonlyone('newboxes4');">
                 Quickly!
             </a>
@@ -204,22 +220,27 @@
                 <a href="translate.html#MAIN_WINDOW" target="main_page">
                     主窗口
                 </a>
-                <div style="text-align: right; border: 3px solid #323232; background-color: white; padding: 5px; font-weight: bold">
-                    <a href="translate.html#PANELS_BARS" target="main_page">
-                        <small>面板&条形栏</small>
-                    </a>
-                    <br>
-                    <a href="translate.html#ICON_TOOLBAR" target="main_page">
-                        <small>图标工具栏</small>
-                    </a>
-                    <br>
-                    <a href="translate.html#TABLE_GRID" target="main_page">
-                        <small>表格网格</small>
-                    </a>
-                    <br>
-                    <a href="translate.html#TRANSLATE_SCRIPTS" target="main_page">
-                        <small>翻译脚本</small>
-                    </a>
+                <div class="secondaryBox">
+                    <div>
+                        <a href="translate.html#PANELS_BARS" target="main_page">
+                            <small>面板&条形栏</small>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="translate.html#ICON_TOOLBAR" target="main_page">
+                            <small>图标工具栏</small>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="translate.html#TABLE_GRID" target="main_page">
+                            <small>表格网格</small>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="translate.html#TRANSLATE_SCRIPTS" target="main_page">
+                            <small>翻译脚本</small>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div>
@@ -271,65 +292,85 @@
                 <a href="menus.html#TRANSLATION_MENU" target="main_page">
                     翻译
                 </a>
-                <br>
-                <div style="text-align: right; border: 3px solid #323232; background-color: white; padding: 5px; font-weight: bold">
-                    <a href="menus.html#Autotranslation_Options" target="main_page">
-                        <small>自动翻译</small>
-                    </a>
-                    <br>
-                    <a href="menus.html#Auto_Translations_1" target="main_page">
-                        <small>1</small>
-                    </a>
-                    <a href="menus.html#Auto_Translations_2" target="main_page">
-                        <small>2</small>
-                    </a>
-                    <a href="menus.html#Auto_Translations_3" target="main_page">
-                        <small>3</small>
-                    </a>
-                    <a href="menus.html#Auto_Translations_4" target="main_page">
-                        <small>4</small>
-                    </a>
-                    <a href="menus.html#Auto_Translations_5" target="main_page">
-                        <small>5</small>
-                    </a>
-                    <a href="menus.html#Auto_Translations_GRUP" target="main_page">
-                        <small>G</small>
-                    </a>
-                    <a href="menus.html#Manual_Auto_Translation" target="main_page">
-                        <small>M</small>
-                    </a>
+                <div class="secondaryBox">
+                    <div>
+                        <a href="menus.html#Autotranslation_Options" target="main_page">
+                            <small>自动翻译</small>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="menus.html#Auto_Translations_1" target="main_page">
+                            <small>1</small>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="menus.html#Auto_Translations_2" target="main_page">
+                            <small>2</small>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="menus.html#Auto_Translations_3" target="main_page">
+                            <small>3</small>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="menus.html#Auto_Translations_4" target="main_page">
+                            <small>4</small>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="menus.html#Auto_Translations_5" target="main_page">
+                            <small>5</small>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="menus.html#Auto_Translations_GRUP" target="main_page">
+                            <small>G</small>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="menus.html#Manual_Auto_Translation" target="main_page">
+                            <small>M</small>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div>
                 <a href="menus.html#DATABASES_MENU" target="main_page">
                     数据库
                 </a>
-                <div style="text-align: right; border: 3px solid #323232; background-color: white; padding: 5px; font-weight: bold">
-                    <a href="menus.html#SEARCH_DB" target="main_page">
-                        <small>mainDB</small>
-                    </a>
-                    <br>
-                    <a href="menus.html#SEARCH_CB" target="main_page">
-                        <small>customDB</small>
-                    </a>
-                    <br>
-                    <a href="menus.html#SEARCH_TB" target="main_page">
-                        <small>onlytextDB</small>
-                    </a>
-                    <br>
-                    <a href="menus.html#SEARCH_MB" target="main_page">
-                        <small>modDB</small>
-                    </a>
-                    <br>
-                    <a href="menus.html#SEARCH_EB" target="main_page">
-                        <small>externalDB</small>
-                    </a>
-                    <br>
-                    <span style="color: #323232">---</span>
-                    <br>
-                    <a href="menus.html#FAST_IMPORT" target="main_page">
-                        <small>Fast Import</small>
-                    </a>
+                <div class="secondaryBox">
+                    <div>
+                        <a href="menus.html#SEARCH_DB" target="main_page">
+                            <small>mainDB</small>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="menus.html#SEARCH_CB" target="main_page">
+                            <small>customDB</small>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="menus.html#SEARCH_TB" target="main_page">
+                            <small>onlytextDB</small>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="menus.html#SEARCH_MB" target="main_page">
+                            <small>modDB</small>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="menus.html#SEARCH_EB" target="main_page">
+                            <small>externalDB</small>
+                        </a>
+                    </div>
+                    <p style="color: #323232">---</p>
+                    <div>
+                        <a href="menus.html#FAST_IMPORT" target="main_page">
+                            <small>Fast Import</small>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div>
