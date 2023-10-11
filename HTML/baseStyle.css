@@ -8,6 +8,7 @@ body {
     background-color: rgb(60, 60, 60);
     margin: 0 35px;
     padding-top: 20px;
+    font-size: 18px;
 }
 
 a {
@@ -35,13 +36,14 @@ p {
 
 .sectionsTitle {
     color: var(--greenColor);
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     text-align: center;
     vertical-align: top;
     background-color: rgb(35, 35, 35);
     border: 2px solid var(--greenColor);
     margin: 20px 0;
+    padding: 3px;
 }
 
 .greenColor,
