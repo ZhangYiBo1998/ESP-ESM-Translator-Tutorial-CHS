@@ -10,6 +10,22 @@
     <link rel="stylesheet" href="baseStyle.css">
     <title>安装Install</title>
 </head>
+
+<style>
+    .installationSteps > P {
+        color: var(--whiteColor);
+    }
+
+    .installationSteps > P > span:first-child {
+        color: var(--orangeColor);
+        font-weight: bold;
+    }
+
+    .installationSteps > P > span:last-child {
+        color: var(--grayColor);
+    }
+</style>
+
 <body>
 <!--TITTLE-->
 <div style="text-align: center; font-weight: bold;">
@@ -69,7 +85,8 @@
         </p>
         <ul>
             <li>
-                <a style="font-weight: bold;" target="_blank" href="https://www.nexusmods.com/skyrimspecialedition/mods/921/?tab=2&navtag=http%3A%2F%2Fwww.nexusmods.com%2Fskyrimspecialedition%2Fajax%2Fmodfiles%2F%3Fid%3D921&pUp=1">
+                <a style="font-weight: bold;" target="_blank"
+                   href="https://www.nexusmods.com/skyrimspecialedition/mods/921/?tab=2&navtag=http%3A%2F%2Fwww.nexusmods.com%2Fskyrimspecialedition%2Fajax%2Fmodfiles%2F%3Fid%3D921&pUp=1">
                     <!--Main Databases-->
                     主要数据库
                 </a>:
@@ -77,7 +94,8 @@
                 它们不包括在程序中，必须从<b>Nexus</b>的作者mod页面上的<i>可选文件</i>部分下载。
             </li>
             <li>
-                <a style="font-weight: bold" target="_blank" href="ftp://ftp.gwdg.de/pub/openoffice/contrib/dictionaries/">
+                <a style="font-weight: bold" target="_blank"
+                   href="ftp://ftp.gwdg.de/pub/openoffice/contrib/dictionaries/">
                     <!--Hunspell Dictionaries-->
                     Hunspell词典
                 </a>:
@@ -91,7 +109,9 @@
             </li>
         </ul>
     </div>
+</div>
 
+<div>
     <!--INSTALL-->
     <div>
         <a id="INSTALL"></a>
@@ -112,152 +132,199 @@
             </span>
         </p>
         <br>
-        <p>
-            <span class="orangeColor" style="font-weight: bold;">
-                1.
-            </span>
-            <!--Uncompress the <b>Application ZIP </b>file anywhere.-->
-            在任意位置解压缩应用程序ZIP文件。
-            <span class="grayColor">
-                <!--The program is portable.-->
-                这个程序是可移植的。
-            </span>
-        </p>
-        <p>
-            <span class="orangeColor"  style="font-weight: bold;">
-                2.
-            </span>
-            <!--Copy the <b>BDD database/s</b> of the choosed game/s to the folder BDD in the install folder.-->
-            将所选游戏的<b>BDD数据库</b>复制到安装文件夹中的BDD文件夹中。
-            <span class="grayColor">
-                <!--Must be downloaded previously from the page of-->
-                <!--<a target="_blank" href="https://www.nexusmods.com/skyrimspecialedition/mods/921/?tab=2&navtag=http%3A%2F%2Fwww.nexusmods.com%2Fskyrimspecialedition%2Fajax%2Fmodfiles%2F%3Fid%3D921&pUp=1">-->
-                <!--    ESP Translator-->
-                <!--</a> at Nexus.-->
-                在此之前必须从Nexus上的
-                <a target="_blank" href="https://www.nexusmods.com/skyrimspecialedition/mods/921/?tab=2&navtag=http%3A%2F%2Fwww.nexusmods.com%2Fskyrimspecialedition%2Fajax%2Fmodfiles%2F%3Fid%3D921&pUp=1">
-                    ESP翻译器
-                </a>
-                页面下载。
-            </span>
-        </p>
-        <p>
-            <span class="orangeColor" style="font-weight: bold;">
-                3.
-            </span>
-            Execute "<b>ESP Translator.exe</b>".
-        </p>
-        <p>
-        <span style="font-weight: bold; color: rgb(255, 153, 0);">
-	        4.
-        </span>
-            Select the <b>Application Language</b> from the list.
-            <span style="color: rgb(192, 192, 192);">
-            This can be changed later in <i>Options/General Options/Application Language</i>.
-        </span>
-        </p>
-        <p>
-        <span style="font-weight: bold; color: rgb(255, 153, 0);">
-	        5.
-        </span>
-            Choose a <b>Main Database</b> for the language to translate.
-            <span style="color: rgb(192, 192, 192);">
-	        This can be changed later in <i>Options/Main Databases/DataBase</i>.
-        </span>
-        </p>
-        <p>
-        <span style="font-weight: bold; color: rgb(255, 153, 0);">
-	        6.
-        </span>
-            Open the <b>Options Window</b> and then select the <b>Scripts and MCM</b> tab<b></b>.
-        </p>
-        <div>
-            <span style="font-weight: bold; color: rgb(255, 153, 0);">
-                7.
-            </span>
-            Choose a translation language in these three settings:
-            <ul style="margin: 0;">
-                <li><b>MCM Analysis</b> "Default language of translated MCM files"</li>
-                <li><b>MCM Translation</b> "Default language of translated MCM files"</li>
-                <li>
-                    <span style="color: white;"><b>Translation of String files</b> "Default language for String files"</span>
-                </li>
-            </ul>
+        <div class="installationSteps">
+            <p>
+                <span>
+                    1.
+                </span>
+                <!--Uncompress the <b>Application ZIP </b>file anywhere.-->
+                在任意位置解压缩应用程序ZIP文件。
+                <span>
+                    <!--The program is portable.-->
+                    这个程序是可移植的。
+                </span>
+            </p>
+            <p>
+                <span>
+                    2.
+                </span>
+                <!--Copy the <b>BDD database/s</b> of the choosed game/s to the folder BDD in the install folder.-->
+                将所选游戏的<b>BDD数据库</b>复制到安装文件夹中的BDD文件夹中。
+                <span>
+                    <!--Must be downloaded previously from the page of-->
+                    <!--<a target="_blank" href="https://www.nexusmods.com/skyrimspecialedition/mods/921/?tab=2&navtag=http%3A%2F%2Fwww.nexusmods.com%2Fskyrimspecialedition%2Fajax%2Fmodfiles%2F%3Fid%3D921&pUp=1">-->
+                    <!--    ESP Translator-->
+                    <!--</a> at Nexus.-->
+                    在此之前必须从Nexus上的
+                    <a target="_blank"
+                       href="https://www.nexusmods.com/skyrimspecialedition/mods/921/?tab=2&navtag=http%3A%2F%2Fwww.nexusmods.com%2Fskyrimspecialedition%2Fajax%2Fmodfiles%2F%3Fid%3D921&pUp=1">
+                        ESP翻译器
+                    </a>
+                    页面下载。
+                </span>
+            </p>
+            <p>
+                <span>
+                    3.
+                </span>
+                <!--Execute "<b>ESP Translator.exe</b>".-->
+                执行“<b>ESP Translator.exe</b>”。
+            </p>
+            <p>
+                <span>
+                    4.
+                </span>
+                <!--Select the <b>Application Language</b> from the list.-->
+                从列表中选择<b>应用程序语言(Application Language)</b>。
+                <span>
+                    <!--This can be changed later in <i>Options/General Options/Application Language</i>.-->
+                    这可以稍后在<i>选项/通用选项/应用程序语言(Options/General Options/Application Language)</i>中更改。
+                </span>
+            </p>
+            <p>
+                <span>
+                    5.
+                </span>
+                <!--Choose a <b>Main Database</b> for the language to translate.-->
+                为要翻译的语言选择一个<b>主数据库(Main Database)</b>。
+                <span>
+                    <!--This can be changed later in <i>Options/Main Databases/DataBase</i>.-->
+                    稍后可以在<i>选项/主数据库/数据库(Options/Main Databases/DataBase)</i>>中对此进行更改。
+                </span>
+            </p>
+            <p>
+                <span>
+                    6.
+                </span>
+                <!--Open the <b>Options Window</b> and then select the <b>Scripts and MCM</b> tab.-->
+                打开<b>“选项”窗口(Options Window)</b>，然后选择“<b>脚本和MCM(Scripts and MCM)</b>”选项卡。
+            </p>
+            <div>
+                <span>
+                    7.
+                </span>
+                <!--Choose a translation language in these three settings:-->
+                在以下三种设置中选择翻译语言：
+                <ul style="margin: 0;">
+                    <li>
+                        <!--<b>MCM Analysis</b> "Default language of translated MCM files"-->
+                        <span style="display: inline-block; width: 5em; font-weight: bold;">MCM分析</span>“默认语言翻译MCM文件”
+                    </li>
+                    <li>
+                        <!--<b>MCM Translation</b> "Default language of translated MCM files"-->
+                        <span style="display: inline-block; width: 5em; font-weight: bold;">MCM翻译</span>“默认语言翻译MCM文件”
+                    </li>
+                    <li>
+                        <!--<b>Translation of String files</b> "Default language for String files"-->
+                        <span style="display: inline-block; width: 5em; font-weight: bold;">文本翻译</span>“默认语言翻译文本文件”
+                    </li>
+                </ul>
+            </div>
+            <p>
+                <span>
+                    <!--OPTIONAL:-->
+                    可选的：
+                </span>
+                <span>
+                    <!--To get spell checking in a not available language, read the <i>Hunspell</i> paragraph in the <i>Introduction</i> part above.-->
+                    如果要使用不可用的语言进行拼写检查，请阅读上面<a href="#INTRODUCTION">引言</a>部分的<i>Hunspell词典</i>段落。
+                </span>
+            </p>
         </div>
-        <p>
-            <span style="color: rgb(255, 153, 0); font-weight: bold;">OPTIONAL:</span>
-            <span style="color: rgb(210, 210, 210);">
-	            To get spell checking in a not available language, read the <i>Hunspell</i> paragraph in the <i>Introduction</i> part above.
-            </span>
-        </p>
     </div>
+</div>
+
+<div>
     <!--UPDATE-->
     <div>
         <a id="UPDATE"></a>
         <div class="sectionsTitle">
-            UPDATE
+            <!--UPDATE-->
+            更新
         </div>
     </div>
     <div>
-        <span style="color: rgb(210, 210, 210);">
-            The program can be updated by overwriting the <b>old version</b> files for those of the <b>new version</b>, but this process sometimes fails, and it is better to install it separatelly and then copy databases and dictionaries manually from your previous installed version. In general, the <b>folders and files to copy</b> are:<br>
-        </span>
+        <p class="grayColor">
+            <!--The program can be updated by overwriting the <b>old version</b> files for those of the <b>new version</b>, but this process sometimes fails, and it is better to install it separatelly and then copy databases and dictionaries manually from your previous installed version. In general, the <b>folders and files to copy</b> are:-->
+            该程序可以通过覆盖<b>旧版本</b>文件来更新到<b>新版本</b>，但此过程有时会失败，最好单独安装，然后从以前安装的版本手动复制数据库和词典。通常，要<b>复制的文件夹和文件</b>包括：
+        </p>
         <br>
-        <span style="font-weight: bold; color: rgb(255, 153, 0);">
-            FOLDERS
-        </span>
+        <div>
+            <p class="orangeColor" style="font-weight: bold;">
+                <!--FOLDERS-->
+                文件夹
+            </p>
+            <p>
+                <span class="orangeColor" style="font-weight: bold;">+</span>
+                <span class="whiteColor" style="font-weight: bold;">BDD: </span>
+                <span class="grayColor">
+                    <!--This folder contains the <b>default databases</b> for games, and the <b>new databases</b> (<i>Main</i>, <i>Custom</i>, <i>OnlyText</i>...) made by you.-->
+                    <!--If newer versions of the <i>Main Databases</i> are uploaded in the mod page, copy first the old version folder and then overwrite them with the downloaded. This way you preserve your own databases and update the default databases.-->
+                    此文件夹包含游戏的<b>默认数据库</b>，以及您创建的<b>新数据库</b>（<i>Main、Custom、OnlyText</i>…）。
+                    如果更新版本的<i>主数据库</i>上传到mod页面，请先复制旧版本文件夹，然后用下载的覆盖它们。通过这种方式，您可以保留自己的数据库并更新默认数据库。
+                </span>
+            </p>
+            <p>
+                <span class="orangeColor" style="font-weight: bold;">+</span>
+                <span class="whiteColor" style="font-weight: bold;">Bases Persos: </span>
+                <span class="grayColor">
+                    <!--This folder contains the personal <b>saved databases</b>, those you make when you save an active translation.-->
+                    此文件夹包含个人<b>保存的数据库</b>，这些数据库是您保存活动翻译时创建的。
+                </span>
+            </p>
+            <p>
+                <span class="orangeColor" style="font-weight: bold;">+</span>
+                <span class="whiteColor" style="font-weight: bold;">
+                    Dictionaries:
+                </span>
+                <span class="grayColor">
+                    <!--This folder contains the <b>spell check</b> dictionaries and <b>synonyms</b> thesaurus. If you installed your owns, you should copy it.-->
+                    此文件夹包含<b>拼写检查</b>词典和<b>同义词</b>词库。如果你安装了自己的，你应该复制它。
+                </span>
+            </p>
+            <p>
+                <span class="orangeColor" style="font-weight: bold;">+</span>
+                <span class="whiteColor" style="font-weight: bold;">Trans Autos: </span>
+                <span class="grayColor">
+                    <!--This folder contains the <i>Auto Translation</i> patterns, both the default examples and the own you made.-->
+                    此文件夹包含<i>自动翻译</i>模式，包括默认示例和您自己创建的模式。
+                </span>
+            </p>
+        </div>
         <br>
-        <span style="font-weight: bold; color: rgb(255, 153, 0);">+</span>
-        <span style="color: white; font-weight: bold;">
-            BDD: </span>
-        <span style="color: rgb(210, 210, 210);">
-                This folder contains the <b>default databases</b> for games, and the <b>new databases</b> (<i>Main</i>, <i>Custom</i>, <i>OnlyText</i>...) made by you. If newer versions of the <i>Main Databases</i> are uploaded in the mod page, copy first the old version folder and then overwrite them with the downloaded. This way you preserve your own databases and update the default databases.
-                </span><br>
-        <span style="font-weight: bold; color: rgb(255, 153, 0);">
-            + </span>
-        <span style="color: white; font-weight: bold;">
-            Bases Persos: </span>
-        <span style="color: rgb(210, 210, 210);">
-                This folder contains the personal <b>saved databases</b>, those you make when you save an active translation.
-                </span><br>
-        <span style="font-weight: bold; color: rgb(255, 153, 0);">
-            + </span>
-        <span style="color: white; font-weight: bold;">
-            Dictionaries: </span>
-        <span style="color: rgb(210, 210, 210);">
-                This folder contains the <b>spell check</b> dictionaries and <b>synonyms</b> thesaurus. If you installed your owns, you should copy it.
-                </span><br>
-        <span style="font-weight: bold; color: rgb(255, 153, 0);">
-            + </span>
-        <span style="color: white; font-weight: bold;">
-            Trans Autos: </span>
-        <span style="color: rgb(210, 210, 210);">
-                This folder contains the <i>Auto Translation</i> patterns, both the default examples and the own you made.
-                </span><br>
+        <div>
+            <p class="orangeColor" style="font-weight: bold;">
+                <!--FILES-->
+                文件
+            </p>
+            <p>
+                <span class="orangeColor" style="font-weight: bold;">+</span>
+                <span class="whiteColor" style="font-weight: bold;">ESP Translator.settings:</span>
+                <span class="grayColor">
+                    <!--These file contains the global setup of the <i>Options</i> window and other tweakeable options in <i>Menus</i>. If you changed them you should copy it.-->
+                    这些文件包含<i>选项(Options)</i>窗口的全局设置以及<i>菜单</i>中的其他可调整选项。如果你更改了它们，你应该复制它。
+                </span>
+            </p>
+            <p>
+                <span class="orangeColor" style="font-weight: bold;">+</span>
+                <span class="whiteColor" style="font-weight: bold;">NewDialogConfig.eet:</span>
+                <span class="grayColor">
+                    <!--It is supposed to store your settings in the <a href="menus.html#FO4_NEWDIALOG">Fallout 4 - Convert for NewDialog Mod</a> tool. So, you may be interested in restore it too.-->
+                    它应该将您的设置存储在<a href="menus.html#FO4_NEWDIALOG">Fallout 4-Convert for NewDialog Mod</a>工具中。因此，您可能也有兴趣恢复它。
+                </span>
+            </p>
+        </div>
         <br>
-        <span style="font-weight: bold; color: rgb(255, 153, 0);">
-        FILES</span><br>
-        <span style="font-weight: bold; color: rgb(255, 153, 0);">
-            + </span>
-        <span style="color: white; font-weight: bold;">
-            ESP Translator.settings: </span>
-        <span style="color: rgb(210, 210, 210);">
-                These file contains the global setup of the <i>Options</i> window and other tweakeable options in <i>Menus</i>. If you changed them you should copy it.
-                </span><br>
-        <span style="font-weight: bold; color: rgb(255, 153, 0);">
-            + </span>
-        <span style="color: white; font-weight: bold;">
-            NewDialogConfig.eet: </span>
-        <span style="color: rgb(210, 210, 210);">
-                It is supposed to store your settings in the <a href="menus.html#FO4_NEWDIALOG">Fallout 4 - Convert for NewDialog Mod</a> tool. So, you may be interested in restore it too.
-                </span><br>
-        <br>
-        <span style="color: rgb(255, 153, 0);">
-            <b>NOTE: </b>
-            <span style="color: yellow;">
-            The <b>ESP Translator.settings</b> file is not included in the compressed archive of the program, so the <b>previous personal settings</b> won't be lost when updating, in case you prefer to install the new version over the old one. But, as said above, this method may fail occasionally.
+        <p>
+            <span class="orangeColor" style="font-weight: bold">
+                <!--NOTE:-->
+                注释：
             </span>
-        </span>
+            <span class="yellowColor">
+                <!--The <b>ESP Translator.settings</b> file is not included in the compressed archive of the program, so the <b>previous personal settings</b> won't be lost when updating, in case you prefer to install the new version over the old one. But, as said above, this method may fail occasionally.-->
+                <b>ESP Translator.settings</b>文件未包含在程序的压缩存档中，因此在更新时不会丢失<b>以前的个人设置</b>，以防您更喜欢安装新版本而不是旧版本。但是，如上所述，这种方法可能偶尔会失败。
+            </span>
+        </p>
     </div>
 </div>
 <!--END-->

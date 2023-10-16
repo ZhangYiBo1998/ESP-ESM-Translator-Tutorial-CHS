@@ -1,5 +1,10 @@
 :root{
     --greenColor: rgb(183, 253, 53);
+    --whiteColor: white;
+    --grayColor: rgb(210, 210, 210);
+    --aquamarineColor: aquamarine;
+    --orangeColor: orange;
+    --yellowColor: yellow;
     --pinkColor: pink;
     --violetColor: violet;
 }
@@ -55,41 +60,41 @@ p {
 .whiteColor,
 .whiteColor span,
 .whiteColor p {
-    color: white !important;
+    color: var(--whiteColor) !important;
 }
 
 .grayColor,
 .grayColor span,
 .grayColor p {
-    color: rgb(210, 210, 210) !important;
+    color: var(--grayColor) !important;
 }
 
 .aquamarineColor,
 .aquamarineColor span,
 .aquamarineColor p {
-    color: aquamarine !important;
+    color: var(--aquamarineColor) !important;
 }
 
 .orangeColor,
 .orangeColor span,
 .orangeColor p {
-    color: orange !important;
+    color: var(--orangeColor) !important;
 }
 
 .yellowColor,
 .yellowColor span,
 .yellowColor p {
-    color: yellow !important;
+    color: var(--yellowColor) !important;
 }
 
 .pinkColor,
 .pinkColor span,
 .pinkColor p {
-    color: pink !important;
+    color: var(--pinkColor) !important;
 }
 
 .violetColor,
 .violetColor span,
 .violetColor p {
-    color: violet !important;
+    color: var(--violetColor) !important;
 }
