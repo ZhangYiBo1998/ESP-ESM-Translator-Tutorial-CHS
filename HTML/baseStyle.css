@@ -1,4 +1,4 @@
-:root{
+:root {
     --greenColor: rgb(183, 253, 53);
     --whiteColor: white;
     --grayColor: rgb(210, 210, 210);
@@ -8,6 +8,7 @@
     --pinkColor: pink;
     --violetColor: violet;
 }
+
 body {
     color: #fff;
     background-color: rgb(60, 60, 60);
@@ -27,6 +28,10 @@ a:visited {
 p {
     margin: 0;
     padding: 0;
+}
+
+i {
+    margin-right: 5px;
 }
 
 .pageTitle {

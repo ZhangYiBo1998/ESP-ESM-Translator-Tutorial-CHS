@@ -295,79 +295,117 @@
                             </div>
                         </div>
                         <div>
-                            <b>Current Game: </b>
+                            <b>
+                                <!--Current Game:-->
+                                当前游戏：
+                            </b>
                             <span>
-								Allows to select the game to which the mod belongs manually, in case it was not selected automatically. Just activate the <i>checkbox</i> and choose the correct game in the <i>dropdown list</i>.
-							</span>
+                                <!--Allows to select the game to which the mod belongs manually, in case it was not selected automatically. Just activate the <i>checkbox</i> and choose the correct game in the <i>dropdown list</i>.-->
+                                允许手动选择mod所属的游戏，以防未自动选择。只需激活<i>复选框</i>并在<i>下拉列表</i>中选择正确的游戏即可。
+                            </span>
                         </div>
                         <div>
-                            <b>Current Encoding: </b>
+                            <b>
+                                <!--Current Encoding:-->
+                                当前编码：
+                            </b>
                             <span>
-								Allows to select the game to which the mod belongs manually, in case it was not selected automatically. Just activate the <i>checkbox</i> and choose the correct game in the <i>dropdown list</i>.
-							</span>
+                                <!--Allows to select the game to which the mod belongs manually, in case it was not selected automatically. Just activate the <i>checkbox</i> and choose the correct game in the <i>dropdown list</i>.-->
+                                允许手动选择mod的文本编码，以防未自动选择。只需激活<i>复选框</i>并在<i>下拉列表</i>中选择对应的文本编码即可。（原文有问题，和当前游戏的介绍重复，已修改为正确介绍）
+                            </span>
                         </div>
                     </div>
                 </li>
                 <li>
                     <b>
-                        Table Grid Panel:
+                        <!--Table Grid Panel:-->
+                        表格网格面板(Table Grid Panel)：
                     </b>
                     <span>
-						Provides access to all the required data components of the mod, arranged by columns and rows, to carry out the translation.
-					</span>
+                        <!--Provides access to all the required data components of the mod, arranged by columns and rows, to carry out the translation.-->
+					    提供对mod的所有必需数据组件的访问，按列和行排列，以执行翻译。
+                    </span>
                 </li>
                 <li>
                     <b>
-                        Validation Buttons:
+                        <!--Validation Buttons:-->
+                        验证按钮(Validation Buttons)：
                     </b>
                     <span>
-						Allows to specify the interpretation of each line when the
-                        <a href="#LAUNCH_TRANSLATION">Launch of the Translation of the Mod</a>
-                        is executed. There are four type of buttons and can be shown/hidden from the
-                        <a href="menus.html#VALIDATION_BUTTONS"><i>Display Menu</i></a>:
+                        <!--Allows to specify the interpretation of each line when the-->
+                        <!--<a href="#LAUNCH_TRANSLATION">Launch of the Translation of the Mod</a>-->
+                        <!--is executed. There are four type of buttons and can be shown/hidden from the-->
+                        <!--<a href="menus.html#VALIDATION_BUTTONS"><i>Display Menu</i></a>:-->
+                        允许在<a href="#LAUNCH_TRANSLATION">启动执行Mod翻译</a>时指定每行的解释。
+                        有四种类型的按钮，可以在<a href="menus.html#VALIDATION_BUTTONS"><i>显示菜单</i></a>中显示/隐藏：
 					</span>
                     <div class="IndentBox" style="margin-left: 40px;">
                         <div>
                             <a id="VALIDATE_BUTTON"></a>
-                            <b>V - Validate Line:</b>
+                            <b>
+                                <!--V - Validate Line:-->
+                                V - 验证行：
+                            </b>
                             <span>
-                                If checked, the line will be validated.
-                                This can also be done from <a href="menus.html#VALIDATE">Validate selected lines (F10)</a> in the <i>Edition Menu</i>
+                                <!--If checked, the line will be validated.-->
+                                <!--This can also be done from <a href="menus.html#VALIDATE">Validate selected lines (F10)</a> in the <i>Edition Menu</i>-->
+
+                                如果选中，将验证该行。
+                                这也可以通过<i>“编辑菜单”</i>中的<a href="menus.html#VALIDATE">“验证所选行（F10）“</a>来完成。
                             </span>
                         </div>
 
                         <div>
                             <a id="UNVALIDATE_BUTTON"></a>
-                            <b>X - Unvalidate Line:</b>
+                            <b>
+                                <!--X - Unvalidate Line:-->
+                                X - 取消验证行:
+                            </b>
                             <span>
-                                If checked, the line previously validated will be unvalidated.
-                                This can also be done from <a href="menus.html#UNVALIDATE">Unvalidate selected lines (SHIFT+F10)</a> in the <i>Edition Menu</i>
+                                <!--If checked, the line previously validated will be unvalidated.-->
+                                <!--This can also be done from <a href="menus.html#UNVALIDATE">Unvalidate selected lines (SHIFT+F10)</a> in the <i>Edition Menu</i>-->
+                                如果选中，则先前验证的行将不被验证。
+                                这也可以通过<i>“编辑菜单”</i>中的<a href="menus.html#UNVALIDATE">“取消验证选定行（SHIFT+F10）”</a>来完成。/
                             </span>
                         </div>
 
                         <div>
                             <a id="CUSTOM_BUTTON"></a>
-                            <b>C - Custom Status Line:</b>
+                            <b>
+                                <!--C - Custom Status Line:-->
+                                C - 自定义状态行(Custom Status Line)：
+                            </b>
                             <span>
-                                If checked, the line will be marked as <i>Custom Status</i>.
-                                The function is just as warning mark to indicate anything the user decide, for example, to indicate to the companions in a translation team which lines need verification.
-                                This can also be done from <a href="menus.html#CUSTOM">Put lines status as "Custom" (CTRL+F10)</a> in the <i>Edition Menu</i>
+                                <!--If checked, the line will be marked as <i>Custom Status</i>.-->
+                                <!--The function is just as warning mark to indicate anything the user decide, for example, to indicate to the companions in a translation team which lines need verification.-->
+                                <!--This can also be done from <a href="menus.html#CUSTOM">Put lines status as "Custom" (CTRL+F10)</a> in the <i>Edition Menu</i>-->
+                                如果选中，该行将标记为<i>自定义状态</i>。
+                                该功能只是一个警告标记，用于指示用户决定的任何内容，例如，向翻译团队中的同伴指示哪些行需要验证。
+                                这也可以通过在<i>“编辑菜单”</i>中<a href="menus.html#CUSTOM">将行状态设置为“自定义（CTRL+F10）”</a>来完成
                             </span>
                         </div>
 
                         <div>
                             <a id="IGNORED_BUTTON"></a>
-                            <b>I - Ignored Line:</b>
+                            <b>
+                                <!--I - Ignored Line:-->
+                                I - 忽略行(Ignored Line)：
+                            </b>
                             <span>
-                                If checked, the line will be marcked as <i>Ignored</i>, to make it completly hidden to the program when the translation of the mod is triggered.
-                                All the lines ignored are deducted from the total number of lines indicated in the <a href="translate.html#PANELS_BARS">GRUP Panel</a>, to the left of the <i>Main Window</i>.
-                                This can also be done from <a href="menus.html#IGNORED">Define line as ignored (CTRL+SHIFT+F10)</a> in the <i>Edition Menu</i>.
+                                <!--If checked, the line will be marcked as <i>Ignored</i>, to make it completly hidden to the program when the translation of the mod is triggered.-->
+                                <!--All the lines ignored are deducted from the total number of lines indicated in the <a href="translate.html#PANELS_BARS">GRUP Panel</a>, to the left of the <i>Main Window</i>.-->
+                                <!--This can also be done from <a href="menus.html#IGNORED">Define line as ignored (CTRL+SHIFT+F10)</a> in the <i>Edition Menu</i>.-->
+                                如果选中，该行将被标记为<i>“已忽略”</i>，以便在触发该模块的翻译时，将其完全隐藏在程序中。
+                                所有忽略的行将从<i>“主窗口“</i>左侧的<a href="translate.html#PANELS_BARS">GRUP面板</a>中指示的总行数中扣除。
+                                这也可以通过<i>“编辑菜单”</i>中的<a href="menus.html#IGNORED">“将行定义为忽略（CTRL+SHIFT+F10）”</a>>来完成。
 
-                                <span style="color: rgb(255, 153, 102);">
-                                    <B>NOTE:</B>
-                                </span>
+                                <b class="orangeColor">
+                                    <!--NOTE:-->
+                                    注意：
+                                </b>
                                 <span style="color: yellow;">
-                                    This feature is also used by the programmer to make scripts for <i>Morrowind, Oblivion, Fallout 3</i> and <i>New Vegas</i>, to ignore lines with nothing to translate in them.
+                                    <!--This feature is also used by the programmer to make scripts for <i>Morrowind, Oblivion, Fallout 3</i> and <i>New Vegas</i>, to ignore lines with nothing to translate in them.-->
+                                    程序员也使用此功能为<i>上古卷轴4：晨风</i>、<i>上古卷轴4：湮没</i>、<i>辐射3</i>和<i>辐射：新维加斯</i>制作脚本，以忽略其中没有翻译内容的行。
                                 </span>
                             </span>
                         </div>
