@@ -214,7 +214,7 @@
                                         <!--Duplicates the tab of the actual active mod, allowing to have several tabs of the same mod opened.-->
                                         <!--Useful when you to have to work on different parts of the mod at the same time, or copy/paste text between distant lines.-->
                                         复制实际活动mod的选项卡，允许打开同一mod的多个选项卡。
-                                        当你必须同时处理mod的不同部分，或者在远处的行之间复制/粘贴文本时，这很有用。
+                                        当你必须同时处理mod的不同部分，或者在远处的词条之间复制/粘贴文本时，这很有用。
                                     </span>
                                 </div>
 
@@ -247,15 +247,15 @@
                                 <div>
                                     <b>
                                         <!--Apply the translated lines of this mod:-->
-                                        应用此mod已翻译的行：
+                                        应用此mod已翻译的词条：
                                     </b>
                                     <span>
                                         <!--When pressed, it will trigger a global analysis of all opened mods in tabs, searching for matching records, and applying the translation of the affected lines.-->
                                         <!--This feature depends on the two checkbox options below, to filter which of the tabbed mods receive and/or propagates the translations.-->
                                         <!--Really, this is just an optional way to execute this function, because it occurs automatically when a line is translated, but sometimes it is necessary to do it manually, like when you have translated the lines of a mod and then you load another mod with similar lines.-->
-                                        按下时，它将触发对选项卡中所有打开的mod的全局分析，搜索匹配的记录，并应用受影响行的翻译。
+                                        按下时，它将触发对选项卡中所有打开的mod的全局分析，搜索匹配的记录，并应用受影响词条的翻译。
                                         此功能取决于下面的两个复选框选项，用于筛选哪些选项卡的MOD接收并/或传播翻译。
-                                        实际上，这只是执行该功能的一种可选方式，因为当一行被翻译时，它会自动发生，但有时需要手动执行，比如当你翻译了一个mod的行，然后加载了另一个具有类似行的mod时。
+                                        实际上，这只是执行该功能的一种可选方式，因为当词条被翻译时，它会自动发生，但有时需要手动执行，比如当你翻译了一个mod的词条，然后加载了另一个具有类似词条的mod时。
                                     </span>
                                 </div>
 
@@ -266,7 +266,7 @@
                                     </b>
                                     <span>
                                         <!--If checked, all the translated lines in the current active mod tab, will be used to translate similar lines in the other mod tabs opened, when the line is translated or when <b>Apply the translated lines of this mod</b> is pressed.-->
-                                        如果选中，当前活动mod选项卡中的所有翻译行将用于翻译打开的其他mod选项卡上的类似行，当该行被翻译或按下应用该mod的翻译行时。
+                                        如果选中，当前活动mod选项卡中的所有翻译词条将用于翻译打开的其他mod选项卡上的类似词条，当该词条被翻译或按下应用该mod的已翻译词条时。
                                     </span>
                                 </div>
 
@@ -277,8 +277,8 @@
                                     </b>
                                     <span>
                                         <!--If checked, this current active mod tab will receive the translation of the lines matching the translated ones in the other mod tabs opened, when the line is translated or when <b>Apply the translated lines of this mod</b> is pressed.-->
-                                        如果选中，当此行被翻译或按下应用该mod的翻译行时，
-                                        当前活动的mod选项卡将接收与打开的其他mod选项卡中的翻译行匹配的行的翻译。
+                                        如果选中，当此词条被翻译或按下应用该mod的已翻译词条时，
+                                        当前活动的mod选项卡将接收与打开的其他mod选项卡中的已翻译词条所匹配的词条的翻译。
                                     </span>
                                 </div>
 
@@ -311,7 +311,7 @@
                             </b>
                             <span>
                                 <!--Allows to select the game to which the mod belongs manually, in case it was not selected automatically. Just activate the <i>checkbox</i> and choose the correct game in the <i>dropdown list</i>.-->
-                                允许手动选择mod的文本编码，以防未自动选择。只需激活<i>复选框</i>并在<i>下拉列表</i>中选择对应的文本编码即可。（原文有问题，和当前游戏的介绍重复，已修改为正确介绍）
+                                允许手动选择mod的文本编码，以防未自动选择。只需激活<i>复选框</i>并在<i>下拉列表</i>中选择对应的文本编码即可。
                             </span>
                         </div>
                     </div>
@@ -336,22 +336,22 @@
                         <!--<a href="#LAUNCH_TRANSLATION">Launch of the Translation of the Mod</a>-->
                         <!--is executed. There are four type of buttons and can be shown/hidden from the-->
                         <!--<a href="menus.html#VALIDATION_BUTTONS"><i>Display Menu</i></a>:-->
-                        允许在<a href="#LAUNCH_TRANSLATION">启动执行Mod翻译</a>时指定每行的解释。
-                        有四种类型的按钮，可以在<a href="menus.html#VALIDATION_BUTTONS"><i>显示菜单</i></a>中显示/隐藏：
+                        允许在<a href="#LAUNCH_TRANSLATION">启动执行Mod翻译</a>时指定解释每一行的词条。
+                        有四种类型的按钮，可以在<a href="menus.html#VALIDATION_BUTTONS"><i>显示菜单(Display Menu)</i></a>中显示/隐藏：
 					</span>
                     <div class="IndentBox" style="margin-left: 40px;">
                         <div>
                             <a id="VALIDATE_BUTTON"></a>
                             <b>
                                 <!--V - Validate Line:-->
-                                V - 验证行：
+                                V - 验证词条：
                             </b>
                             <span>
                                 <!--If checked, the line will be validated.-->
                                 <!--This can also be done from <a href="menus.html#VALIDATE">Validate selected lines (F10)</a> in the <i>Edition Menu</i>-->
 
-                                如果选中，将验证该行。
-                                这也可以通过<i>“编辑菜单”</i>中的<a href="menus.html#VALIDATE">“验证所选行（F10）“</a>来完成。
+                                如果选中，将验证该词条。
+                                这也可以通过<i>编辑菜单(Edition Menu)</i>中的<a href="menus.html#VALIDATE">验证所选词条(Validate selected lines)（F10）</a>来完成。
                             </span>
                         </div>
 
@@ -359,13 +359,13 @@
                             <a id="UNVALIDATE_BUTTON"></a>
                             <b>
                                 <!--X - Unvalidate Line:-->
-                                X - 取消验证行:
+                                X - 取消验证词条:
                             </b>
                             <span>
                                 <!--If checked, the line previously validated will be unvalidated.-->
                                 <!--This can also be done from <a href="menus.html#UNVALIDATE">Unvalidate selected lines (SHIFT+F10)</a> in the <i>Edition Menu</i>-->
-                                如果选中，则先前验证的行将不被验证。
-                                这也可以通过<i>“编辑菜单”</i>中的<a href="menus.html#UNVALIDATE">“取消验证选定行（SHIFT+F10）”</a>来完成。/
+                                如果选中，则先前验证的词条将不被验证。
+                                这也可以通过<i>编辑菜单(Edition Menu)</i>中的<a href="menus.html#UNVALIDATE">取消验证选定词条(Unvalidate selected lines)（SHIFT+F10）</a>来完成。
                             </span>
                         </div>
 
@@ -373,15 +373,15 @@
                             <a id="CUSTOM_BUTTON"></a>
                             <b>
                                 <!--C - Custom Status Line:-->
-                                C - 自定义状态行(Custom Status Line)：
+                                C - 自定义状态(Custom Status Line)：
                             </b>
                             <span>
                                 <!--If checked, the line will be marked as <i>Custom Status</i>.-->
                                 <!--The function is just as warning mark to indicate anything the user decide, for example, to indicate to the companions in a translation team which lines need verification.-->
                                 <!--This can also be done from <a href="menus.html#CUSTOM">Put lines status as "Custom" (CTRL+F10)</a> in the <i>Edition Menu</i>-->
-                                如果选中，该行将标记为<i>自定义状态</i>。
-                                该功能只是一个警告标记，用于指示用户决定的任何内容，例如，向翻译团队中的同伴指示哪些行需要验证。
-                                这也可以通过在<i>“编辑菜单”</i>中<a href="menus.html#CUSTOM">将行状态设置为“自定义（CTRL+F10）”</a>来完成
+                                如果选中，该词条将标记为<i>自定义状态</i>。
+                                该功能只是一个警告标记，用于指示用户决定的任何内容，例如，向翻译团队中的同伴指示哪些词条需要验证。
+                                这也可以通过在<i>编辑菜单(Edition Menu)</i>中<a href="menus.html#CUSTOM">将词条状态更改为“自定义”(Put lines status as "Custom")（CTRL+F10）</a>来完成。
                             </span>
                         </div>
 
@@ -389,15 +389,15 @@
                             <a id="IGNORED_BUTTON"></a>
                             <b>
                                 <!--I - Ignored Line:-->
-                                I - 忽略行(Ignored Line)：
+                                I - 忽略该行(Ignored Line)：
                             </b>
                             <span>
                                 <!--If checked, the line will be marcked as <i>Ignored</i>, to make it completly hidden to the program when the translation of the mod is triggered.-->
                                 <!--All the lines ignored are deducted from the total number of lines indicated in the <a href="translate.html#PANELS_BARS">GRUP Panel</a>, to the left of the <i>Main Window</i>.-->
                                 <!--This can also be done from <a href="menus.html#IGNORED">Define line as ignored (CTRL+SHIFT+F10)</a> in the <i>Edition Menu</i>.-->
-                                如果选中，该行将被标记为<i>“已忽略”</i>，以便在触发该模块的翻译时，将其完全隐藏在程序中。
-                                所有忽略的行将从<i>“主窗口“</i>左侧的<a href="translate.html#PANELS_BARS">GRUP面板</a>中指示的总行数中扣除。
-                                这也可以通过<i>“编辑菜单”</i>中的<a href="menus.html#IGNORED">“将行定义为忽略（CTRL+SHIFT+F10）”</a>>来完成。
+                                如果选中，该词条将被标记为<i>“已忽略”</i>，以便在触发该模块的翻译时，将其完全隐藏在程序中。
+                                所有忽略的词条将从<i>“主窗口“</i>左侧的<a href="translate.html#PANELS_BARS">GRUP面板</a>中指示的总行数中扣除。
+                                这也可以通过<i>编辑菜单(Edition Menu)</i>中的<a href="menus.html#IGNORED">将词条的状态更改为“忽略”(Define line as ignored)（CTRL+SHIFT+F10）</a>>来完成。
 
                                 <b class="orangeColor">
                                     <!--NOTE:-->
@@ -405,7 +405,7 @@
                                 </b>
                                 <span style="color: yellow;">
                                     <!--This feature is also used by the programmer to make scripts for <i>Morrowind, Oblivion, Fallout 3</i> and <i>New Vegas</i>, to ignore lines with nothing to translate in them.-->
-                                    程序员也使用此功能为<i>上古卷轴4：晨风</i>、<i>上古卷轴4：湮没</i>、<i>辐射3</i>和<i>辐射：新维加斯</i>制作脚本，以忽略其中没有翻译内容的行。
+                                    程序员也使用此功能为<i>上古卷轴4：晨风</i>、<i>上古卷轴4：湮没</i>、<i>辐射3</i>和<i>辐射：新维加斯</i>制作脚本，以忽略其中没有翻译内容的词条。
                                 </span>
                             </span>
                         </div>
@@ -413,75 +413,95 @@
                 </li>
                 <li>
                     <b>
-                        Original Text Panel:
+                        <!--Original Text Panel:-->
+                        原文面板：
                     </b>
                     <span>
-						Displays a broad view of the original text of the cell selected.
+                        <!--Displays a broad view of the original text of the cell selected.-->
+                        显示所选单元格的原始文本的大致视图。
 					</span>
                 </li>
                 <li>
                     <b>
-                        Translated Text Panel:
+                        <!--Translated Text Panel:-->
+                        译文面板：
                     </b>
                     <span>
-						Displays a broad view of the translated text of the cell selected.
+                        <!--Displays a broad view of the translated text of the cell selected.-->
+                        显示所选单元格的翻译文本的大致视图。
 					</span>
                 </li>
                 <li>
                     <b>
-                        Game Panel:
+                        <!--Game Panel:-->
+                        游戏面板：
                     </b>
                     <span>
-						Shows the image of the game selected of the mod to translate.
+                        <!--Shows the image of the game selected of the mod to translate.-->
+                        显示被翻译mod的游戏图标。
 					</span>
                 </li>
                 <li>
                     <b>
-                        Monitor Panel:
+                        <!--Monitor Panel:-->
+                        监控面板：
                     </b>
                     <span>
-						Offers several monitoring tools listed in tabs.
+                        <!--Offers several monitoring tools listed in tabs.-->
+                        提供选项卡中列出的几个监控工具。
 					</span>
                     <div class="IndentBox" style="margin-left: 40px;">
                         <div>
                             <b>
-                                Comments Tab:
+                                <!--Comments Tab:-->
+                                描述(Comments)：
                             </b>
                             <span>
-                                Displays the <a href="glossary.html#COMMENTS">comments</a> of the selected line, the complete line of the scripts that contains the text selected, and some extra technical data, like the related quest, the faction of the NPC, the linked media filenames, etc.
-                                It can be modified by the user, but <a href="#SCRIPTS_WARNING">be careful with the scripts</a>.
+                                <!--Displays the <a href="glossary.html#COMMENTS">comments</a> of the selected line, the complete line of the scripts that contains the text selected, and some extra technical data, like the related quest, the faction of the NPC, the linked media filenames, etc.-->
+                                <!--It can be modified by the user, but <a href="#SCRIPTS_WARNING">be careful with the scripts</a>.-->
+                                显示所选行的<a href="glossary.html#COMMENTS">注释</a>，包含所选文本的完整脚本行以及一些额外的技术数据，如相关任务、NPC派系、链接的媒体文件名等。
+                                用户可以修改它，但要<a href="#SCRIPTS_WARNING">小心脚本</a>。
                             </span>
                         </div>
 
                         <div>
                             <b>
-                                Linked Lines Tab:
+                                <!--Linked Lines Tab:-->
+                                关联的mod词条(Linked mod lines)：
                             </b>
                             <span>
-                                Offers a list of the lines linked to a selected line.
-                                It is common in <i>dialog</i> and <i>script</i> lines, which can be linked to various other lines of the conversation.
-                                This is very useful to meet the overall context of the line to translate.
-                                When the selected line corresponds a book, they are also linked to the tittle line of the <i>book</i> and vice versa.
+                                <!--Offers a list of the lines linked to a selected line.-->
+                                <!--It is common in <i>dialog</i> and <i>script</i> lines, which can be linked to various other lines of the conversation.-->
+                                <!--This is very useful to meet the overall context of the line to translate.-->
+                                <!--When the selected line corresponds a book, they are also linked to the tittle line of the <i>book</i> and vice versa.-->
+                                提供链接到选定词条所在行的列表。
+                                这在<i>对话框</i>和<i>脚本</i>词条中很常见，它们可以链接到对话的其他行。
+                                这对于满足整体语境的词条翻译是非常有用的。
+                                当选定的词条对应于一本书时，它们也会链接到该<i>书</i>的标题行，反之亦然。
                             </span>
                         </div>
 
                         <div>
                             <b>
-                                Suggestions Tab:
+                                <!--Suggestions Tab:-->
+                                参照(Suggestions)：
                             </b>
                             <span>
-                                Offers a list of lines containing at least one word in common with the line to translate as hint to know which is the translation of the word/text used by the game, to use it as "quick dictionary" to translate words/text with various interpretations.
+                                <!--Offers a list of lines containing at least one word in common with the line to translate as hint to know which is the translation of the word/text used by the game, to use it as "quick dictionary" to translate words/text with various interpretations.-->
+                                提供一个行列表，其中至少包含一个与要翻译的词条相同的单词作为提示，以了解游戏所用单词/文本的翻译，并将其用作“快速词典”，以翻译具有各种解释的单词/文本。
                             </span>
                         </div>
 
                         <div>
                             <b>
-                                Line History Tab:
+                                <!--Line History Tab:-->
+                                词条日志(Line History)：
                             </b>
                             <span>
-                                Shows the <a href="menus.html#LINE_LOG">log</a> history of the modification changes in the selected line at the <i>Table Grid</i>, offering the possibility to recover the text of a previous modification by pressing on
-                                <span style="color: white; font-weight: bold;">"Apply this text"</span> button, on the right.
-                                After that, the text will be updated in the "Translated Text" cell.
+                                <!--Shows the <a href="menus.html#LINE_LOG">log</a> history of the modification changes in the selected line at the <i>Table Grid</i>, offering the possibility to recover the text of a previous modification by pressing on <b class="whiteColor">"Apply this text"</b> button, on the right.-->
+                                <!--After that, the text will be updated in the "Translated Text" cell.-->
+                                显示<i>表格网格面板(Table Grid Panel)</i>中所选行中修改的<a href="menus.html#LINE_LOG">日志</a>历史记录，通过按下右侧的<b class="whiteColor">“应用此文本(Apply this text)”</b>按钮，可以恢复以前修改的文本。
+                                之后，文本将在“翻译文本”单元格中更新。
                             </span>
                         </div>
                     </div>
