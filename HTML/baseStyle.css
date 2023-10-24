@@ -42,7 +42,8 @@ table{
     border: 1px solid var(--grayColor);
 }
 
-tr, td {
+tr,
+td {
     padding: 2px;
 }
 
