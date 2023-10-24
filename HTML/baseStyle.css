@@ -34,6 +34,34 @@ i {
     margin-right: 5px;
 }
 
+table{
+    text-align: left;
+    width: 512px;
+    height: 58px;
+    margin: 0 auto;
+    border: 1px solid var(--grayColor);
+}
+
+tr, td {
+    padding: 2px;
+}
+
+tr td {
+    border-bottom: 1px solid var(--grayColor);
+}
+
+tr:last-of-type td {
+    border-bottom: 0;
+}
+
+td {
+    border-right: 1px solid var(--grayColor);
+}
+
+td:last-of-type {
+    border-right: 0;
+}
+
 .pageTitle {
     color: var(--greenColor);
     font-size: 35px;
