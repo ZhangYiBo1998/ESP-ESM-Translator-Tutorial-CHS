@@ -14,7 +14,6 @@
     ul.PanelsAndBars_ul li > b,
     ul.PanelsAndBars_ul li div.IndentBox > div > b {
         color: var(--whiteColor);
-        font-weight: bold;
     }
 
     ul.PanelsAndBars_ul li > span,
@@ -24,6 +23,18 @@
 
     tr, td {
         padding: 2px;
+    }
+
+    .iconToolbarBox .list > p > b:nth-of-type(1) {
+        color: var(--orangeColor);
+    }
+
+    .iconToolbarBox .list > p > b:nth-of-type(2) {
+        color: var(--whiteColor);
+    }
+
+    .iconToolbarBox .list > p > span {
+        color: var(--grayColor);
     }
 </style>
 
@@ -202,13 +213,13 @@
                         <div>
                             <b>
                                 <!--Menu:-->
-                                菜单(Menu)：
+                                右键标签出现的菜单(Menu)：
                             </b>
                             <div class="IndentBox" style="margin-left: 40px;">
                                 <div>
                                     <b>
                                         <!--Open another view of the mod:-->
-                                        打开mod的另一个视图：
+                                        打开Mod的另一个视图：
                                     </b>
                                     <span>
                                         <!--Duplicates the tab of the actual active mod, allowing to have several tabs of the same mod opened.-->
@@ -221,7 +232,7 @@
                                 <div>
                                     <b>
                                         <!--Open the mod in another window:-->
-                                        在另一个窗口中打开mod：
+                                        在另一个窗口中打开Mod：
                                     </b>
                                     <span>
                                         <!--Duplicates the tab of the actual active mod in a new window without the <i>Menu</i> and <i>Icon</i> bars.-->
@@ -234,12 +245,12 @@
                                 <div>
                                     <b>
                                         <!--Open the mod in a simple table:-->
-                                        在一个简单的表格中打开mod：
+                                        在一个简单的表中打开Mod：
                                     </b>
                                     <span>
                                         <!--Duplicates the tab of the current active mod in a new window hidden all bars and panels except the <i>Table Grid</i> panel and its contents.-->
                                         <!--Useful for fast visual revision.-->
-                                        为当前活动中的mod选项卡打开一个新窗口，隐藏除“表格网格”面板及其内容之外的所有工具栏和面板。
+                                        为当前活动中的mod选项卡打开一个新窗口，隐藏除<i>词条列表</i>面板及其内容之外的所有工具栏和面板。
                                         适用于快速视觉修订。
                                     </span>
                                 </div>
@@ -247,14 +258,14 @@
                                 <div>
                                     <b>
                                         <!--Apply the translated lines of this mod:-->
-                                        应用此mod已翻译的词条：
+                                        应用此mod的翻译：
                                     </b>
                                     <span>
                                         <!--When pressed, it will trigger a global analysis of all opened mods in tabs, searching for matching records, and applying the translation of the affected lines.-->
                                         <!--This feature depends on the two checkbox options below, to filter which of the tabbed mods receive and/or propagates the translations.-->
                                         <!--Really, this is just an optional way to execute this function, because it occurs automatically when a line is translated, but sometimes it is necessary to do it manually, like when you have translated the lines of a mod and then you load another mod with similar lines.-->
                                         按下时，它将触发对选项卡中所有打开的mod的全局分析，搜索匹配的记录，并应用受影响词条的翻译。
-                                        此功能取决于下面的两个复选框选项，用于筛选哪些选项卡的MOD接收并/或传播翻译。
+                                        此功能取决于下面的两个复选框选项，用于筛选哪些选项卡的MOD接收或传播翻译。
                                         实际上，这只是执行该功能的一种可选方式，因为当词条被翻译时，它会自动发生，但有时需要手动执行，比如当你翻译了一个mod的词条，然后加载了另一个具有类似词条的mod时。
                                     </span>
                                 </div>
@@ -273,12 +284,12 @@
                                 <div>
                                     <b>
                                         <!--This file can receive translations from other opened files:-->
-                                        此文件可以接收其他打开文件的翻译：
+                                        此文件可以复制其他文件的翻译：
                                     </b>
                                     <span>
                                         <!--If checked, this current active mod tab will receive the translation of the lines matching the translated ones in the other mod tabs opened, when the line is translated or when <b>Apply the translated lines of this mod</b> is pressed.-->
                                         如果选中，当此词条被翻译或按下应用该mod的已翻译词条时，
-                                        当前活动的mod选项卡将接收与打开的其他mod选项卡中的已翻译词条所匹配的词条的翻译。
+                                        当前活动的mod选项卡将接收其他已打开的mod选项卡中的已翻译词条所匹配的词条的翻译。
                                     </span>
                                 </div>
 
@@ -319,7 +330,7 @@
                 <li>
                     <b>
                         <!--Table Grid Panel:-->
-                        表格网格面板(Table Grid Panel)：
+                        词条列表面板(Table Grid Panel)：
                     </b>
                     <span>
                         <!--Provides access to all the required data components of the mod, arranged by columns and rows, to carry out the translation.-->
@@ -403,7 +414,7 @@
                                     <!--NOTE:-->
                                     注意：
                                 </b>
-                                <span style="color: yellow;">
+                                <span class="yellowColor">
                                     <!--This feature is also used by the programmer to make scripts for <i>Morrowind, Oblivion, Fallout 3</i> and <i>New Vegas</i>, to ignore lines with nothing to translate in them.-->
                                     程序员也使用此功能为<i>上古卷轴4：晨风</i>、<i>上古卷轴4：湮没</i>、<i>辐射3</i>和<i>辐射：新维加斯</i>制作脚本，以忽略其中没有翻译内容的词条。
                                 </span>
@@ -500,7 +511,7 @@
                             <span>
                                 <!--Shows the <a href="menus.html#LINE_LOG">log</a> history of the modification changes in the selected line at the <i>Table Grid</i>, offering the possibility to recover the text of a previous modification by pressing on <b class="whiteColor">"Apply this text"</b> button, on the right.-->
                                 <!--After that, the text will be updated in the "Translated Text" cell.-->
-                                显示<i>表格网格面板(Table Grid Panel)</i>中所选行中修改的<a href="menus.html#LINE_LOG">日志</a>历史记录，通过按下右侧的<b class="whiteColor">“应用此文本(Apply this text)”</b>按钮，可以恢复以前修改的文本。
+                                显示<i>词条列表(Table Grid)</i>中所选行中修改的<a href="menus.html#LINE_LOG">日志</a>历史记录，通过按下右侧的<b class="whiteColor">“应用此文本(Apply this text)”</b>按钮，可以恢复以前修改的文本。
                                 之后，文本将在“翻译文本”单元格中更新。
                             </span>
                         </div>
@@ -509,28 +520,42 @@
 
                 <li>
                     <b>
-                        Status Bar:
+                        <!--Status Bar:-->
+                        状态栏：
                     </b>
                     <span>
-                        Shows two types of statistical data:
+                        <!--Shows two types of statistical data:-->
+                        显示两种类型的统计数据：
                     </span>
                     <div class="IndentBox" style="margin-left: 40px;">
-                        <div style="color: rgb(210, 210, 210);">
+                        <div>
                             <b>+</b>
                             <span>
-                                The <b>number of selected lines</b>, at the start of the lower left corner.
+                                <!--The <b>number of selected lines</b>, at the start of the lower left corner.-->
+                                左下角开始处的<b>选定词条数量(selected lines)</b>。
                             </span>
 						</div>
                         <div>
                             <b>+</b>
                             <span>
-                                The <b>number of lines by color</b> in squares plus the global total after the <b>/</b> in numbers,
+                                <!--The <b>number of lines by color</b> in squares plus the global total after the <b>/</b> in numbers,-->
+                                正方形中按<b>颜色区分的行数</b> <b>/</b> 所有颜色行数相加后的<b>总行数</b>
                             </span>
                         </div>
                         <p>
-                            <b class="orangeColor">WONDER: </b>
+                            <b class="orangeColor">
+                                <!--WONDER:-->
+                                注意：
+                            </b>
                             <span class="yellowColor">
-                                By clicking on them, the lines in the <i>Main Window</i> are filtered by color, showing or hidding only the ones chosen or discarded. A <b>Left Mouse Button</b> click on a color square <i>deselects</i> only the color lines picked. A <b>Right Mouse Button</b> <i>deselects</i> all colors except the color picked. To restore all colors to the default selected state, just click with the <i>Left Mouse Button</i> on the global <b>/number_of_lines</b>, at the end of the lower right corner.
+                                <!--By clicking on them, the lines in the <i>Main Window</i> are filtered by color, showing or hidding only the ones chosen or discarded.-->
+                                <!--A <b>Left Mouse Button</b> click on a color square <i>deselects</i> only the color lines picked.-->
+                                <!--A <b>Right Mouse Button</b> <i>deselects</i> all colors except the color picked.-->
+                                <!--To restore all colors to the default selected state, just click with the <i>Left Mouse Button</i> on the global <b>/number_of_lines</b>, at the end of the lower right corner.-->
+                                通过单击它们，主窗口中的行将按颜色进行过滤，只显示或隐藏选定或丢弃的行。
+                                <b>鼠标左键</b>单击颜色方块<i>仅取消选择</i>选定颜色的行。
+                                <b>鼠标右键</b>单击颜色方块<i>取消选择</i>除选定颜色外的所有颜色的行。
+                                要将所有颜色恢复到默认的选定状态，只需用<i>鼠标左键</i>单击右下角末尾的<b>总行数</b>即可。
                             </span>
                         </p>
                     </div>
@@ -538,133 +563,143 @@
             </ul>
 
             <p>
-                <span style="color: rgb(255, 153, 0); font-weight: bold;">
-                    TIP:
-                </span>
-                <span style="color: yellow;">
-					Some of these elements can be shown/hidden via <a href="menus.html#VALIDATION_BUTTONS">Display Menu</a>.
+                <b class="orangeColor">
+                    <!--TIP:-->
+                    提示：
+                </b>
+                <span class="yellowColor">
+                    <!--Some of these elements can be shown/hidden via <a href="menus.html#VALIDATION_BUTTONS">Display Menu</a>.-->
+                    其中一些元素可以通过<a href="menus.html#VALIDATION_BUTTONS">显示菜单(Display Menu)</a>显示/隐藏。
 				</span>
             </p>
         </div>
         <br>
 
-        <div>
+        <div class="iconToolbarBox">
             <div>
                 <a id="ICON_TOOLBAR"></a>
-                <span style="color: rgb(183, 253, 53);">
-					<b>The Icon Toolbar </b>(and other icons)
+                <span class="greenColor">
+					<b>
+                        <!--The Icon Toolbar-->
+                        图标工具栏
+                    </b>
+                    <!--(and other icons)-->
+                    包括其他图标
 				</span>
             </div>
             <br>
-            <div>
-                <img style="width: 611px; height: 72px;" alt="" src="images/bar_toolbar.png">
-                <br>
+            <div class="list">
+                <div>
+                    <img style="width: 611px; height: 72px;" alt="" src="images/bar_toolbar.png">
+                </div>
                 <br>
                 <p>
-                    <span style="font-weight: bold; color: rgb(255, 153, 0);">1. </span>
-                    <span style="color: white; font-weight: bold;">Open File: </span>
-                    <span style="color: rgb(210, 210, 210);">
+                    <b>1. </b>
+                    <b>
+                        Open File:
+                    </b>
+                    <span>
 						Opens a dialog box to select the mod to translate.
 					</span>
                 </p>
                 <p>
                     <a id="LAUNCH_TRANSLATION"></a>
-                    <span style="font-weight: bold; color: rgb(255, 153, 0);">2. </span>
-                    <span style="color: white; font-weight: bold;">
+                    <b>2. </b>
+                    <b>
 						Launch the Translation of the Mod:
-					</span>
-                    <span style="color: rgb(210, 210, 210);">
+					</b>
+                    <span>
 						Starts the translation of the mod applying the validated lines into the ESP/ESM file. A dialog box will opens to select the location to save the translated mod. A default destination folder for the saves can be set in the <a
                             href="options.html#FOLDERS">Options</a> window for Bethesda games.
 					</span>
                 </p>
                 <p>
-                    <span style="font-weight: bold; color: rgb(255, 153, 0);">3. </span>
-                    <span style="color: white; font-weight: bold;">Options: </span>
-                    <span style="color: rgb(210, 210, 210);">
+                    <b>3. </b>
+                    <b>Options: </b>
+                    <span>
 						Opens the <a href="options.html">Options</a> window to setup the program.
 					</span>
                 </p>
                 <p>
-                    <span style="font-weight: bold; color: rgb(255, 153, 0);">4. </span>
-                    <span style="color: white; font-weight: bold;">Automatic Translations: </span>
-                    <span style="color: rgb(210, 210, 210);">
+                    <b>4. </b>
+                    <b>Automatic Translations: </b>
+                    <span>
 						Opens the <a href="menus.html#Autotranslation_Options">Automatic Translations</a> window to work with them.
 					</span>
                 </p>
                 <p>
-                    <span style="font-weight: bold; color: rgb(255, 153, 0);">5. </span>
-                    <span style="color: white; font-weight: bold;">Search &amp; Replace: </span>
+                    <b>5. </b>
+                    <b>Search &amp; Replace: </b>
                     <span style="color: rgb(210, 210, 210);">
 						Opens a window which allows to search and replace some word/text in the Translated Text column. Just insert the search text in <i>Search for</i> and the replacement text in <i>Replace by</i>.
 					</span>
                 </p>
                 <p>
-                    <span style="font-weight: bold; color: rgb(255, 153, 0);">6. </span>
-                    <span style="color: white; font-weight: bold;">Save Translation: </span>
+                    <b>6. </b>
+                    <b>Save Translation: </b>
                     <span style="color: rgb(210, 210, 210);">
 						Allows to save the current opened mod translation data table as a <i>personal EET/XML database</i>, which can be reloaded to be modified later or used, once complete, as a translation file for different versions or mods.
 					</span>
                 </p>
                 <p>
-                    <span style="font-weight: bold; color: rgb(255, 153, 0);">7. </span>
-                    <span style="color: white; font-weight: bold;">Load Translation:</span>
+                    <b>7. </b>
+                    <b>Load Translation:</b>
                     <span style="color: rgb(210, 210, 210);">
 						Allows to load a <i>personal EET/XML database</i> previously saved by the <i>Save Translation</i> option above, or downloaded from other users, to be modified or used, once completed, as a translation file for different versions or mods. It´s perfectly viable to load a file which does not correspond with the currently loaded mod, because only the pertinent elements will be used.
 					</span>
                 </p>
                 <p>
-                    <span style="font-weight: bold; color: rgb(255, 153, 0);">8. </span>
-                    <span style="color: white; font-weight: bold;">Export Text: </span>
+                    <b>8. </b>
+                    <b>Export Text: </b>
                     <span style="color: rgb(210, 210, 210);">
 						Extracts the raw translated text of the mod to allow the user to copy it globally from any task required. The text to export can be filtered by <i>GRUP</i>.
 					</span>
                 </p>
                 <p>
-                    <span style="font-weight: bold; color: rgb(255, 153, 0);">9. </span>
-                    <span style="color: white; font-weight: bold;">Fast Import: </span>
+                    <b>9. </b>
+                    <b>Fast Import: </b>
                     <span style="color: rgb(210, 210, 210);">
 						Opens the <a href="menus.html#FAST_IMPORT">Fast Import</a> window to work with databases requiring data importation management.
 					</span>
                 </p>
                 <p>
-                    <span style="font-weight: bold; color: rgb(255, 153, 0);">10. </span>
-                    <span style="color: white; font-weight: bold;">Search Main DB: </span>
+                    <b>10. </b>
+                    <b>Search Main DB: </b>
                     <span style="color: rgb(210, 210, 210);">
 						Allows to search, consult, edit the <i>Main Database</i> and apply (Shift+F5) it on the current translation. Also allows to create a new one and merge several databases by importing then.
 					</span>
                 </p>
                 <p>
-                    <span style="font-weight: bold; color: rgb(255, 153, 0);">11. </span>
-                    <span style="color: white; font-weight: bold;">Search Custom DB:</span>
+                    <b>11. </b>
+                    <b>Search Custom DB:</b>
                     <span style="color: rgb(210, 210, 210);">
 						Allows to create, search, consult, edit a <i>Custom Database</i> and apply (Ctrl+F5) it on the current translation, as well as merge several databases by importing then.
 					</span>
                 </p>
                 <p>
-                    <span style="font-weight: bold; color: rgb(255, 153, 0);">12. </span>
-                    <span style="color: white; font-weight: bold;">Search OnlyText DB: </span>
+                    <b>12. </b>
+                    <b>Search OnlyText DB: </b>
                     <span style="color: rgb(210, 210, 210);">
 						Allows to create, search, consult, edit an <i>OnlyText Database</i> and apply (Alt+F5) it on the current translation, as well as merge several databases by importing then.
 					</span>
                 </p>
                 <p>
-                    <span style="font-weight: bold; color: rgb(255, 153, 0);">13. </span>
-                    <span style="color: white; font-weight: bold;">Search Current Mod:</span>
+                    <b>13. </b>
+                    <b>Search Current Mod:</b>
                     <span style="color: rgb(210, 210, 210);">
 						Offers a quick filter access of the selected text/line in the current mod by F4, to consult and/or edit it without the need to redefine the filters or lose the line focus. Instead, only the <i>Translated Text</i> field and the comment line can be modified. Lines can be validated by F10.
 					</span>
                 </p>
                 <p>
-                    <span style="font-weight: bold; color: rgb(255, 153, 0);">14. </span>
-                    <span style="color: white; font-weight: bold;">Search External DB:</span>
+                    <b>14. </b>
+                    <b>Search External DB:</b>
                     <span style="color: rgb(210, 210, 210);">
 						Allows to load an <i>External EET/XML/ESP/ESM/TLK/ERF/DAZIP/TP2/SST/PRJ/PEX database</i> to search, consult, or apply (Ctrl+Shift+F5) it on the current translation.
 					</span>
                 </p>
                 <p>
-                    <span style="font-weight: bold; color: rgb(255, 153, 0);">15. </span>
-                    <span style="color: white; font-weight: bold;">Window for Scripts: </span>
+                    <b>15. </b>
+                    <b>Window for Scripts: </b>
                     <span style="color: rgb(210, 210, 210);">
 						Allows to open the current selected script line in a window with tools for scripting (full script viewer, syntax highlighting...) to make the translation more informative and secure.
 					</span>
@@ -674,8 +709,8 @@
 					</span>
                 </p>
                 <p>
-                    <span style="font-weight: bold; color: rgb(255, 153, 0);">16 . </span>
-                    <span style="color: white; font-weight: bold;">Find Spell Mistake: </span>
+                    <b>16 . </b>
+                    <b>Find Spell Mistake: </b>
                     <span style="color: rgb(210, 210, 210);">
 						Allows to find the next spell error in the table grid, scrolling down to it automatically.
 					</span>
